@@ -1,0 +1,18 @@
+body{
+	background-color: #f0eeee;
+	color: #858585;
+} 
+header{
+	text-align: center;
+	border: 1px solid red;
+}
+main{
+	border: 1px solid green;
+	padding: 20px;
+}
+footer{
+	border: 1px solid blue;
+	float: right;
+	padding: 20px;
+	margin: 10px;
+}
