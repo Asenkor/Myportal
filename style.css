@@ -4,33 +4,40 @@ body{
 }
 header{
 	text-align: center;
-	border: 1px solid red;
+	font-size: 20pt;
+	/* border: 1px solid red; */
 }
 main{
-	border: 1px solid green;
-	padding: 20px;
+	/* border: 1px solid green; */
+	padding: 5px 20px;
+	
 	font-size: 18pt;
 }
 footer{
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 	float: right;
-	padding: 20px;
+	padding: 5px;
 }
-div{
-	border: 1px solid black;
+footer ul{
+	padding-left: 0px;
 }
+li {
+    list-style-type: none;
+   }
+ 
 div.date{
-	border: 1px solid gray;
+	/* border: 1px solid gray; */
 	font-size: 12pt;
 }
 nav{
-	border: 1px solid lightgreen;
+	/* border: 1px solid lightgreen; */
 	padding: 20px;
+	text-align: center;
 }
 nav a{
 	padding: 10px;
 	margin: 10px;
-	border: 1px solid gray;
+	/* border: 1px solid gray; */
 	text-decoration: none;
 	color: #858585;
 }
@@ -38,6 +45,12 @@ nav a:hover{
 	background: lightgray;
 	padding: 12px;
 	margin: 8px;
+}
+.article{
+	padding: 10px 20px;
+	border: 2px solid darkgray;
+	border-radius: 10px;
+	background-color: lightgray;
 }
 /* Для страницы развития */
 .layout{
