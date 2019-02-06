@@ -1,7 +1,7 @@
 body{
 	background-color: #f0eeee;
 	color: #858585;
-} 
+}
 header{
 	text-align: center;
 	border: 1px solid red;
@@ -39,4 +39,32 @@ nav a:hover{
 	padding: 12px;
 	margin: 8px;
 }
+/* Для страницы развития */
+.layout{
+	overflow: hidden;
+	padding: 1px auto;
+}
+.layout DIV{
+	text-align: center;
+	float: left;
+	border-radius: 3px;
+	marging-left: 15px;
+}
+.col1{
+	background: #C7E3E4;
+	width: 30%;
 
+}
+.col2{
+	background: #C7E3E4;
+	width: 30%;
+}
+.col3{
+	background: #C7E3E4;
+	width: 30%;
+}
+.clearfix{
+  height: 0px;
+  clear: both;
+}
+/* конец страницы развития */
