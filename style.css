@@ -11,7 +11,7 @@ header{
 main{
 	/* border: 1px solid green; */
 	padding: 5px 20px;
-	
+
 	font-size: 18pt;
 }
 footer{
@@ -25,7 +25,7 @@ footer ul{
 li {
     list-style-type: none;
    }
- 
+
 div.date{
 	/* border: 1px solid gray; */
 	font-size: 12pt;
@@ -52,6 +52,23 @@ nav a:hover{
 	border: 2px solid darkgray;
 	border-radius: 10px;
 	background-color: lightgray;
+}
+.learn{
+	background: white;
+	border: 1px dashed green;
+	text-align: center;
+	border-radius: 10px;
+}
+.goal{
+	background: rgb(150, 199, 190);
+	border: 3px solid red;
+	text-align: center;
+	border-radius: 10px;
+	color: rgb(193, 87, 59)
+}
+.goal:hover{
+	background: rgb(140, 189, 186);
+	color: red;
 }
 /* Для страницы развития */
 .layout{
