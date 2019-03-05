@@ -2,11 +2,10 @@ body{
 	font-family: Roboto, sans-serif;
 	font-size: 20px;
 	color: rgb(20,80,230);
-	background: rgb(220,220,220);
-	/* background-image: url("images/marina.jpg"); */
-	/* background-attachment: fixed; */
-	text-shadow: 1px 1px 0px white;
+	background-image: url("images/marina.jpg");
+	background-attachment: fixed;
 	margin: 0;
+	text-shadow: 1px 1px 1px white;
 }
 div{
 	/* отмечаем все блоки рамками, чтобы видно было, ну и для разметки */
@@ -15,19 +14,27 @@ div{
   margin: 10px auto;
   line-height: 1.7em;
 }
+div.wrapper{
+	background-color: rgba(255,255,255,0.4);
+	margin: 0;
+	padding: 0;
+	border: 1px dashed rgb(180,180,180); 
+	
+}
 div.header{
 	min-width: 600px;
 	margin: 0;
 	padding: 0;
+	/* border: 1px dashed rgb(191,191,191); */
 }
 div.header>a{
 	text-decoration: none;
-	color: rgb(20,80,230);
+	color: rgb(20,100,230);
 	padding: 10px;
 	border: 1px solid blue;
 	border-radius: 7px;
 	display: block;
-	width: 200px;
+	width: 300px;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 16px;
@@ -54,7 +61,7 @@ div.nav{
 }
 div.nav>a{
 	text-decoration: none;
-	color: rgb(20,80,230);
+	color: rgb(20,100,230);
 	padding: 10px;
 	margin: 10px;
 	border: 1px solid blue;
@@ -79,7 +86,7 @@ div.answer>h2{
 }
 div.fixed{
 	position: fixed;
-	bottom: 55px;
+	bottom: 90px;
 	margin: 0;
 	width: 100%;
 	padding: 0;
@@ -110,8 +117,10 @@ div.footer{
 	text-align: left;
 	font-size: 16px;
 	line-height: 1.3em;
-	width: 270px;
 	float: right;
+}
+.clearfix{
+	clear:both;
 }
 div.footer>ul{
 	list-style-type: none;
@@ -121,7 +130,7 @@ div.footer p{
 }
 div.footer a{
 	text-decoration: none;
-	color: rgb(20,80,230);
+	color: rgb(20,100,230);
 	border: 1px solid blue;
 	border-radius: 5px;
 	padding: 0 5px;
