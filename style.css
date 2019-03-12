@@ -2,6 +2,7 @@ body{
 	background-color: #f0eeee;
 	color: #858585;
 	font-family: 'Roboto', sans-serif;
+	padding: 0 40px;
 }
 header{
 	text-align: center;
@@ -69,6 +70,13 @@ nav a:hover{
 .goal:hover{
 	background: rgb(140, 189, 186);
 	color: red;
+}
+div.container{
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin: 10px 0 20px;
+	padding: 0 10px 10px;
+	background-color: rgb(224, 224, 224);
 }
 /* Для страницы развития */
 .layout{
