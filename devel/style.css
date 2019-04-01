@@ -1,0 +1,54 @@
+body{
+	background-image: linear-gradient(#344,#678);
+	background-attachment: fixed;
+	color: white;
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+.header{
+	text-align: center;
+	/* я случайно сделал светящийся текст. Нужно запомнить этот прием */
+	text-shadow: 1px 1px 3px yellow, 0 0 1em lightblue;
+	font-size: 24px;
+}
+
+/* div{ */
+	/* border: 1px solid red; */
+/* } */
+div.container{
+	
+	border: 1px solid green;
+}
+
+.card{
+	border-radius: 5px;
+	width: 600px;
+	margin: 40px auto;
+	padding: 10px;
+	text-align: justify;
+	background-color: rgba(225,225,225, 0.2);
+	/* с помощью этого свойства сделал размытие дива с карточкой  */
+	box-shadow: 0 0 8px 8px rgba(225,225,225, 0.2);
+	text-indent: 20px;
+}
+
+.card>h2,h3{
+	text-align: center;
+}
+ul{
+	text-align: left;
+	list-style: circle;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	/* Через свойства CSS упростил код HTML, указав жирность текста ссылки в стилях  */
+	font-weight: bold;
+}
+a:hover{
+	color: black;
+	text-decoration: underline;
+}
