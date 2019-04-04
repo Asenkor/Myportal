@@ -8,12 +8,21 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="top">
     <div class="header">
-      <h1>План развития</h1>
+      <h1 class="header-h1">План развития</h1>
+	  <div class="header-nav">
+	  <a class="header-nav-a" href="#html" title="План для HTML">Изучение HTML</a>
+	  <a class="header-nav-a" href="#css" title="План для CSS">Изучение CSS3</a>
+	  <a class="header-nav-a" href="#js" title="План для JavaScript">Изучение JavaScript</a>
+	  <!-- Для вертикальной менюшки -->
+	    <!-- <div class="header-nav-pos"></div> -->
+		<!-- <div class="header-nav-pos"></div> -->
+		<!-- <div class="header-nav-pos"></div> -->
+	  </div>
     </div>
     <div class="container">
-        <div class="card html">
+        <div class="card html" id="html" >
 		<h2>HyperText Markup Language, язык гипертекстовой разметки.</h3>
           <p>HTML - это основа основ. Это не программирование, это всего лишь основа верстки, чуть усложненная версия кнопочек в MS Word. С помощью этого языка мы создаем скелет страницы, его структуру. Простыми словами, мы указываем браузеру, что на странице есть заголовок, таблица, изображение, список и тому подобное, но не указываем где они находятся, как оформлены и расположены. Набросок карандашом, если хотите.
 		  <h3>Для изучения используем следующие источники:</h3>
@@ -35,8 +44,9 @@
               <li>другие разделы html5, особенно касающиеся блоков, слоев и т.д.</li>
 			</ul>
 		  </p>
+		  <a class="card-button-up" href="#top" title="Полетели=)">ВВЕРХ</a>
         </div>
-        <div class="card css">
+        <div class="card css" id="css" >
 		<h2>CSS или каскадные таблицы стилей.</h3>
           <p> Выделены для облегчения написания HTML-разметки и разделения "разметки-оформления". Предназначены для визуального оформления страницы. Если в HTML мы наросали разметку сайта карандашом, то CSS позволяет нам разукрасить наш рисунок и расположить композицию наиболее удачно в конкретном случае. Такая же основа, как и HTML.
 		  </p>
@@ -84,8 +94,9 @@
               <li>практиковаться</li>
             </ul>
         </p>
+		<a class="card-button-up" href="#top" title="Полетели=)">ВВЕРХ</a>
         </div>
-        <div class="card js">
+        <div class="card js" id="js">
 		<h2>Javascript, motherfucker!</h3>
           <p>В конце концов, его величество javascript. С его помощью можно делать на сайте все, что необходимо. По сути весь функционал сайта состоит из написанных на js скриптов. Учить до этого уровня обязательно.</p>
 		  <h3>План обучения js таков:</h3>
@@ -129,12 +140,14 @@
 		    </ul>
           <p>Дальше по желанию можно изучить такие штуки как react и angular 2 (можно и vue.js использовать как замену angular 2). Научиться работать с webpack, jade, font ninja и visual event. Ну и не забываем о node.js - javascript вне браузера.
 		  </p>
+		  <a class="card-button-up" href="#top" title="Полетели=)">ВВЕРХ</a>
         </div>
     </div>
-    <div class="nav">
+	<div class="footer">
+     <div class="footer-nav">
       <a href="../DayOne.html">Первый день</a> | <a href="../DayTwo.html">Второй день</a> | <a href="../DayThree.html">Третий день</a> | <INPUT TYPE="button" VALUE="Назад" onClick="history.go(-1);">
-    </div>
-    <div class="footer">
+     </div>
+    
       <p>Андрей Сенько</p>
       <ul>
         <li><a href="https://vk.com/iceman_fan">VK</a></li>
