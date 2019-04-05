@@ -56,12 +56,11 @@ body{
 
 .header-nav-a:hover{
 	text-decoration: none;
-	
 	animation-name: light;
 	animation-duration: 1s;
-
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
 }
-
 
 .card{
 	border-radius: 5px;
@@ -86,7 +85,7 @@ body{
 .card-button-up{
 	border: 1px solid rgb(220,210,200);
 	border-radius: 5px;
-	padding: 4px; 
+	padding: 4px;
 	display: block;
 	width: 84px;
 	margin: 0 auto;
@@ -114,13 +113,48 @@ a{
 	/* Через свойства CSS упростил код HTML, указав жирность текста ссылки в стилях  */
 	font-weight: bold;
 }
+
 a:hover{
 	color: black;
 	text-decoration: underline;
+	text-shadow: none;
+}
+
+.footer{
+	border-top: 1px solid white;
+	padding-top: 10px;
+}
+.footer-nav{
+	text-align: center;
+}
+
+.footer-nav-button{
+	border: 1px solid rgb(220,210,200);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.footer-nav-button:hover{
+	text-decoration: none;
+	animation-name: light;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+}
+
+.footer-contacts{
+	/* border: 1px solid white; */
+	width: 300px;
+	float: right;
+	text-align: center;
+}
+
+.footer-contacts li{
+	list-style: none;
 }
 
 @keyframes light {
-    from {	
+    from {
 	background-color: rgba(240,240,240, 0.2);
 	box-shadow: 0 0 8px 8px rgba(240,240,240, 0);
 	color: white;}
