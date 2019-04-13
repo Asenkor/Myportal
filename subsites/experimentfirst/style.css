@@ -1,0 +1,202 @@
+@keyframes photo-appearance {
+  0% {
+    transform: translate3d(0px, -75px, 0px);
+    opacity: 0;
+  }
+   100% {
+    transform: translate3d(0px, 0px, 0px);
+     opacity: 1;
+  }
+}
+
+@keyframes text-appearance {
+  0% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+  50% {
+     opacity: 0.25;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  box-sizing: border-box;
+  background-image: radial-gradient(#A4CED1, #6BA6AC);
+  height: 250vh;
+  padding-top: 160px;
+}
+.popup {
+  box-sizing: border-box;
+  background-image: linear-gradient(#54858C, #6BA6AC);
+  width: 400px;
+  min-height: 280px;
+  padding: 70px 32px;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  position: relative;
+}
+.popup_title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 29px;
+  color: #214242;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: bold;
+  animation: text-appearance .75s linear;
+  animation-delay: .75s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.popup_text {
+	font-family: "PT Sans ", sans-serif;
+  font-size: 16px;
+  color: #214245;
+  text-align: center;
+  animation: text-appearance .75s linear;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.popup_link { 
+  display: block;
+  margin: 10px auto;
+  color: #214242;
+  text-align: center;
+  font-family: "Comic Sans", sans-serif ;
+  background: linear-gradient(#75c275,lightgreen,#a4f1a4);
+  width: 280px;
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 18pt;
+  transition: 0.5s ease-out;
+  position: relative;
+}
+.popup_link:hover {
+  background: linear-gradient(#75c275,#a1f1a1,#75c275);
+  padding: 15px 0;
+  width: 290px;
+}
+.popup_link:active {
+  color: white;
+}
+.popup_other{
+	text-align: center;
+	padding-top: 20px;
+}
+.popup_other_link{
+	text-decoration: none;
+	color: gray;
+}
+.avatar {
+  border-radius: 100px;
+  position: absolute;
+  top: -70px;
+  left: 150px;
+  height: 130px;
+  width: 100px;
+   animation: photo-appearance .75s ease-in-out;
+}
+.button_icon {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	left: 17px;
+  bottom: 9px;
+}
+.popup_buttons{
+  margin: 35px 0 0;
+}
+.wrapper-fin {
+  box-sizing: border-box;
+  background-image: radial-gradient(#A4CED1, #6BA6AC);
+  height: 300vh;
+  padding-top: 30px;
+}
+.p-fin{
+	box-sizing: border-box;
+	width: 500px;
+	margin: 0 auto;
+	background-image: linear-gradient(#54858C, #6BA6AC);
+	padding: 20px 10px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position: relative;
+}
+li{
+	margin: 10px; 
+}
+.text-fin{
+	font-family: "PT Sans ", sans-serif;
+	color: #214245;
+	animation: text-appearance .75s linear;
+	animation-delay: 1.5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+/*стили для менюшки*/
+.meny{             /*Общий блок*/
+	/*background: #fdeaa8;*/     /*Фон общего блока*/
+	padding: 5px;     /*Отступ от пунктов меню*/
+	border-radius: 5px;     /*Закруглённые углы*/
+	/*box-shadow: 0px 0px 0px 2px #0ea8f4;     /*Рамка общего блока*/
+	position:relative;
+	left: -175px;
+	transition: all 0.5s ease-in-out;
+	}
+.meny:hover{
+	transform: translateX(160px);	
+}
+ ul {             /*Пункты меню*/
+	width: 220px;     /*Ширина пунктов подменю*/
+	list-style: none;     /*Убираем маркеры*/
+	padding: 0;     /*Поля вокруг текста*/
+	margin: 0 0 0 0;     /*Отступы вокруг подменю*/
+	font-family: Ubuntu, sans-serif;     /*Шрифт текста в меню*/
+	font-size: 16px;     /*Размер текста в меню*/
+	text-align: center;     /*Текст по центру*/
+	}
+ li ul {             /*Размещаем подменю*/
+	position: absolute;     /*Подменю позиционируются абсолютно*/
+	/*display: none;     /*Скрываем подменю*/
+	margin-left: 40px;     /*Сдвиг подменю вправо или влево*/
+	margin-top: -10px; 	/*Сдвиг подменю вверх или вниз*/
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s ease-in-out;
+	/*z-index: 10;   */ 
+	}
+  li a {              /*Ссылка в подменю*/ 
+	display: block;     /*Ссылка*/
+	padding: 5px;     /*Поля вокруг текста*/     
+	margin-bottom: 5px;
+	text-decoration: none;     /*Убираем подчеркивание*/
+	color: #214242;     /*Цвет текста*/
+	border-radius: 5px;    /*Закруглённые углы пунктов меню*/
+	background-image: linear-gradient(#54858C, #6BA6AC);
+	}
+   li a:hover {         /*Ссылки подменю при наведении курсора*/
+	color: #ffe;     /*Цвет текста при наведении*/
+	box-shadow: 0px 0px 5px 2px #0ea8f4; /*Рамка при наведении*/
+	background: #009494;     /*Фон при наведении*/
+	}
+   li a:active{        /*При нажатии */
+	color: #ef7a04;
+	box-shadow: 0px 0px 15px 5px #0ea8f4;
+	}
+   li:hover ul {         /*Подменю при наведении курсора*/
+	/*display: block;	/*Подменю отображается при наведении курсора*/
+	visibility: visible;
+	opacity: 1;
+   }

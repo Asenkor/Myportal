@@ -1,0 +1,51 @@
+﻿body{
+	background-color: RGB(111, 164, 164);
+}
+.navigation
+{
+	text-align: center;
+
+}
+.sec
+{
+	
+}
+#namesec
+{
+	font-size: 28pt;
+	text-align: center;
+}
+#cont
+{
+	padding-left: 15px;
+	margin-left: 15px;
+}
+h1
+{
+	font-size: 36pt;
+	font-family: Courier;
+	text-align: center;
+}
+p,ol>li
+{
+	padding: 5px 20px 5px 10px;
+	margin: 5px 20px 5px 10px;
+	font-family: Georgia, sans-serif;
+ 	font-weight: 100;
+	font-size: 16pt;
+}
+.img
+{
+	float:left; /* Выравнивание по левому краю */
+    margin: 7px 10px 7px 0; /* Отступы вокруг картинки */
+}
+p.and
+{
+	text-align: center;
+	font-size: 18pt;	
+}
+div.video
+{
+	text-align:center;
+}
+
