@@ -1,0 +1,26 @@
+div.post-test::before{
+	content: "Таблица с границами через CSS";
+}
+.table-one::before{
+	content: "Обычная таблица";
+}
+.table-two::before{
+	content: "Таблица с <th>";
+}
+.table-three::before{
+	content: "border-spasing: 5px;";
+}
+table, tr, td, th{
+	margin: 10px auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.table-two{
+	width: 100%;
+}
+.table-three{
+	border-collapse: none;
+	border-spacing: 5px;
+}
+
+
