@@ -9,19 +9,10 @@ body{
   text-shadow: 0 0 2px rgb(40,40,40);
 }
 
-
-
-/* div{  */
-  /* /* border: 1px solid red; */ */
- /* } */
-
 .container{
   width: 1000px;
   margin: 0 auto;
   padding-bottom: 1px;
-  background: white;
-  z-index: 2;
-  
 }
 
 .header-logo{
@@ -80,7 +71,6 @@ body{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-align: center;
-	
 }
 
 .links ul{
@@ -91,13 +81,13 @@ body{
 	letter-spacing: 1px;
 	font-size: 1.1em;
 	}
-	
+
 .links li{
 	padding-bottom: 25px;
 	margin-bottom: 20px;
 	border-bottom: 3px solid rgba(30,30,30, 0.6);
 	position: relative;
-}	
+}
 
 .links a{
 	text-decoration: none;

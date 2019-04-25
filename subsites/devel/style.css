@@ -56,12 +56,11 @@ body{
 
 .header-nav-a:hover{
 	text-decoration: none;
-	
 	animation-name: light;
 	animation-duration: 1s;
-
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
 }
-
 
 .card{
 	border-radius: 5px;
@@ -86,7 +85,7 @@ body{
 .card-button-up{
 	border: 1px solid rgb(220,210,200);
 	border-radius: 5px;
-	padding: 4px; 
+	padding: 4px;
 	display: block;
 	width: 84px;
 	margin: 0 auto;
@@ -120,7 +119,7 @@ a:hover{
 }
 
 @keyframes light {
-    from {	
+    from {
 	background-color: rgba(240,240,240, 0.2);
 	box-shadow: 0 0 8px 8px rgba(240,240,240, 0);
 	color: white;}
