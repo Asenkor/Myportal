@@ -8,11 +8,26 @@ body{
   background: rgb(235, 235, 235);
   text-shadow: 0 0 2px rgb(40,40,40);
 }
+<<<<<<< HEAD
+=======
+
+
+
+/* div{  */
+  /* /* border: 1px solid red; */ */
+ /* } */
+>>>>>>> e132e354b2afe817aea080b69147e4d3af394c39
 
 .container{
   width: 1000px;
   margin: 0 auto;
   padding-bottom: 1px;
+<<<<<<< HEAD
+=======
+  background: white;
+  z-index: 2;
+  
+>>>>>>> e132e354b2afe817aea080b69147e4d3af394c39
 }
 
 .header-logo{
@@ -71,7 +86,11 @@ body{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-align: center;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> e132e354b2afe817aea080b69147e4d3af394c39
 }
 
 .links ul{
@@ -82,13 +101,21 @@ body{
 	letter-spacing: 1px;
 	font-size: 1.1em;
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> e132e354b2afe817aea080b69147e4d3af394c39
 .links li{
 	padding-bottom: 25px;
 	margin-bottom: 20px;
 	border-bottom: 3px solid rgba(30,30,30, 0.6);
 	position: relative;
+<<<<<<< HEAD
 }
+=======
+}	
+>>>>>>> e132e354b2afe817aea080b69147e4d3af394c39
 
 .links a{
 	text-decoration: none;
