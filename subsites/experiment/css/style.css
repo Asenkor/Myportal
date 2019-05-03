@@ -31,7 +31,17 @@ h1{
 .main-p{
 	text-align: center;
 }
-a{
+
+a.main{
+	text-decoration: none;
+	color: inherit;
+}
+
+a.main:hover{
+	border-bottom: 2px solid #868695;
+}
+
+a.main-button{
 	text-decoration: none;
 	color: #334455;
 	border: 1px solid green;
@@ -43,7 +53,7 @@ a{
 	text-align: center;
 }
 
-a:hover{
+a.main-button:hover{
 	background: #ccc;
 }
 
@@ -90,4 +100,70 @@ a:hover{
 
 h4{
 	text-align: center;
+}
+.buttons{
+	width: 600px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+a.up{
+	width:100px;
+	display: inline-block;
+	
+}
+
+.footer{
+	font-size: 0.8em;
+}
+
+.copyright{
+  float:left;
+  width: 300px;
+  padding-left: 20px;
+  line-height: 2em;
+}
+
+.media{
+	float: right;
+	padding-right: 20px;
+}
+
+.media ul{
+	list-style: none;
+}
+
+.media a{
+	text-decoration: none;
+	border: none;
+	padding: 5px;
+	display: inline-block;
+	color: inherit;
+	
+}
+.media a:hover{
+	border-bottom: 3px solid #535362;
+	padding-bottom: 2px;
+}
+
+.media a:active{
+	color: gray;
+}
+
+.atr{
+	width: 70%;
+	border: 2px dashed red;
+	border-radius: 2px;
+	margin: 20px auto;
+}
+
+.atr ul{
+	text-align: justify;
+	list-style: circle;
+}
+
+.clearfix:after{
+	content: "";
+	clear: both;
+	display: table;
 }

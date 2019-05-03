@@ -13,14 +13,26 @@ div.post-test::before{
 table, tr, td, th{
 	margin: 10px auto;
 	border: 1px solid black;
-	border-collapse: collapse;
+	/* border-collapse: collapse; */
 }
 .table-two{
 	width: 100%;
+	border-collapse: collapse;
 }
 .table-three{
 	border-collapse: none;
 	border-spacing: 5px;
+}
+.six{
+	float: left;
+	margin-left: 100px;
+}
+.six td{
+	height: 40px;
+	width: 40px;
+}
+.done{
+	clear: right;
 }
 
 
