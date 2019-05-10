@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/form.css" rel="stylesheet">
+  <title>Формы</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 id="top"><a class="main" href="../index.html" title="На главную полигона">Испытательный полигон</a></h1>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
+      <div class="post">
+        <div class="post-name ">
+          <h3>HTML. Изучаем формы</h3>
+        </div>
+        <div class="post-date">03 мая 2019 года</div>
+        <div class="post-body">
+
+          <p>После изучения таблиц я перехожу к изучению форм. Мы все ближе подходим к интерактивности. Формы являются одним из важных элементов любого сайта и предназначены для обмена данными между пользователем и сервером. Область применения форм не ограничена отправкой данных на сервер, с помощью клиентских скриптов можно получить доступ к любому элементу формы, изменять его и применять по своему усмотрению.</p>
+          <h4>Формы в HTML</h4>
+          <div>
+
+            <div class="form">
+              <p>Давайте создадим какую-нибудь форму с помощью тега form</p>
+              <form class="" action="" method="post">
+                <p><input name="login"> <input type="password" name="pass"></p>
+                <p><input type="submit" value="Нажми на меня"></p>
+              </form>
+              <p>А здесь создадим форму, уже используя однострочное поле ввода со всеми атрибутами, вроде size 40, maxlenght 25, name name and value Андрей.</p>
+              <form class="" action="" method="GET">
+                <p>Как Вас зовут?</p>
+                <p><input maxlenght="25" value="Андрей" size="30" name="name"</p>
+              </form>
+              <p>Ну и для наглядности изменим параметры: size 100, maxleght 10, name login and value пусть будем Пинск.</p>
+              <form class="" action="index.html" method="post">
+                <p>Из какого Вы города?</p>
+                <p><input type="text" name="login" value="Пинск" maxlength="10" size="100"></p>
+              </form>
+              <p>Повторим простенькую первую форму для ввода логина и пароля. Вместо value я решил добавить placeholder</p>
+              <form class="" action="index.html" method="post">
+                <p>Введите свой логин и пароль, пожалуйста</p>
+                <p><strong>Логин:</strong> <input type="text" name="login" placeholder="login here"></p>
+                <p><strong>Пароль:</strong> <input type="password" name="pass" placeholder="password here"></p>
+                <p><input type="submit" value="Клик!"></p>
+              </form>
+              <p>Теперь посмотрим на многострочное окошко с помощью тега textarea. Ее атрибуты такие как и у предыдущих плюс: cols, disabled, readonly, rows and wrap. И еще чуть позже я добавил кнопку очистки через тип резет.</p>
+              <form class="" action="index.html" method="post">
+                <p>Создадим rows 8, cols 80, name comment</p>
+                <p>Введите Ваш комментарий:</p>
+                <p><textarea name="comment" rows="8" cols="80" placeholder="8 rows, 80 cols"></textarea></p>
+                <p><input type="submit" value="Click" title="Клац, чтобы отправить"></p>
+                <p><input type="reset" value="Очистить поле"</p>
+              </form>
+              <form class="" action="index.html" method="post">
+                <p>А теперь атрибуты rows 6, cols 40, readonly</p>
+                <p>Ваше предложение:</p>
+                <p><textarea name="propose" rows="6" cols="60" readonly>Попробуй меня изменить или удалить=) Можешь только скопировать</textarea></p>
+                <p><input type="submit" value="CLiCK-CLACK"></p>
+              </form>
+              <p>А теперь поиграем с кнопками. Ранее на этой странице все кнопки под формами делались с помощью тайп="субмит". Всего же есть два типа кнопок: input and button. Т.е. если просто: в формах для отправки данных на сервер служит кнопка с типом субмит, все остальное - кнопки для другого функционала.</p>
+              <form class="" action="index.html" method="post">
+                <input type="button" name="button" value="Нажми на меня, я инпут баттон">
+                <button>А я кнопка через тег баттон. В меня можно вставлять изображения, таблицы и много чего еще</button>
+              </form>
+              <p>Вот теперь перейдем к переключателям. Любим же мы потыкать всякое=)</p>
+              <form class="" action="index.html" method="post">
+                <p>Тип radio переключателей используется когда необходимо выбрать лишь один вариант из предложенных. ВАЖНО! Имя name должно быть одинаковым для всех радио одной формы, а валюе - разным. В противном случае радио не объединятся в один вопрос. </p>
+                <p>Вы человек?</p>
+                <p><input type="radio" name="human" value="yes"> Да
+                <input type="radio" name="human" value="no">Нет</p>
+              </form>
+              <p> А вот флажки или чекбоксы помогают выбрать несколько вариантов.</p>
+              <form class="" action="" method="post">
+                <p>Моими любимыми героями являются:</p>
+                <p><input type="checkbox" checked name="hero" value="batman">БЭТМЕН!!!
+                <input type="checkbox" name="hero" value="hulk">Халк ака Брюс Беннер
+                <input type="checkbox" name="hero" value="blackwidow">Наташа Романоффф
+                <input type="checkbox" name="hero" value="captain">Капитан Америка
+                <input type="checkbox" name="hero" value="ironman">Железный человек</p>
+                <input type="submit" name="" value="Нажми, чтобы ничего не случилось">
+              </form>
+              <p>Не забываем о раскрывающемся списке. Пишется через тег селект, в котором пишутся варианты в теге оптион.</p>
+              <form class="select" action="" method="post">
+                      <select multiple>
+                        <option value="1">один</option>
+                        <option value="2">два</option>
+                        <option value="3">три</option>
+                        <option value="4">четыре</option>
+                      </select>
+                      <select size="1">
+                        <option value="1">один</option>
+                        <option value="2">два</option>
+                        <option value="3">три</option>
+                        <option value="4">четыре</option>
+                      </select>
+              </form>
+              <p>В этом же типе списка можно делать группировку с помощью тега optgroup. Пробуем.</p>
+              <form class="select" action="" method="post">
+                <p>Любимая команда в Формуле 1?</p>
+                <select name="teamf1">
+                  <optgroup label="Топы">
+                    <option value="t1">Ferrari</option>
+                    <option value="t2">Mercedes</option>
+                    <option value="t3">RedBull</option>
+                  </optgroup>
+                  <optgroup label="Середняки">
+                    <option value="t4">Racing Point</option>
+                    <option value="t5">Alfa Romeo</option>
+                    <option value="t6">Haas</option>
+                    <option value="t7">Renault</option>
+                    <option value="t8">Toro Rosso</option>
+                  </optgroup>
+                  <optgroup label="Днище">
+                    <option value="t9">Williams</option>
+                  </optgroup>
+                </select>
+                <p><input type="submit"></p>
+              </form>
+              <p>Еще через форму мы можем загружать файлы. Инпут тип файл. Обязательно необходимо указать метод ПОСТ и установить у атрибута enctype значение multipart/form-data.</p>
+              <form enctype="multipart/form-data" action="" method="post">
+                <input type="file" name="jpg" accept="image/jpeg">
+              </form>
+              <p>Среди типов есть еще поле для ввода адреса электронной почты. Оно ничем от однострочного не отличается,  кроме как тем, что оно автоматически проверяет корректность ввода адреса. Браузер сообщит об ошибке, если адрес введен неверно. Type - email.</p>
+              <form class="" action="" method="post">
+                <p>Введите Ваш адрес электронной почты:</p>
+                <p><input type="email" name="email" value="" placeholder="example@test.com"></p>
+              </form>
+              <p>Это же касается и веб-сайтов. Есть специальный тип для адреса сайта. Функция такая же, как и у и-мэйла. Type - url.</p>
+              <form class="" action="" method="post">
+                <p>Введите адрес Вашего сайта:</p>
+                <p><input type="url" name="site" placeholder="Сайт"></p>
+                <p><input type="submit"></p>
+              </form>
+              <p>Позволю себе втесниться сюда. На MDN прочитал о теге label, который помогает связывать поля ввода с их названиями, а также при клике на название поля фокус автоматически переходит в само поле. Пишется это через тег лабел. В инпуте указываем id поля, а в лабеле связываем его через for. Пробуем. Если вы кликните на слово Email и в поле появится курсор - значит у меня получилось.</p>
+              <form class="" action="" method="post">
+                <p>Введите адрес Вашего сайта:</p>
+                <p><label for="email">Email: </label>
+                  <input type="url" id="email" name="site" placeholder="Сайт"></p>
+                <p><input type="submit"></p>
+              </form>
+              <p>Добавлено 10.05.19.</p>
+              <p>В книге сейчас вычитал про интересную вещь, datalist называется. Это автозаполнение текстового поля, или помощь в автозаполнении. Это обычное текстовое поле с выпадающим списком ответов, которые я могу заранее определить. Задается атрибутом list в input. Пробуем.</p>
+              <form class="" action="" method="post">
+                <label for="education">Ваше образование:</label>
+                <input type="text" list="edulevel" name="education" value="">
+                <datalist id="edulevel">
+                  <option value="Среднее">Школа</option>
+                  <option value="Средне-специальное">Колледж</option>
+                  <option value="Высшее">Университет</option>
+                </datalist>
+              </form>
+              <p>Далее будут обсуждаться элементы HTML5, которые без обработчика не несут смысла и в обычных формах их вряд ли увидишь. Поэтому я буду просто приводить название и сам вид, без описания атрибутов.</p>
+              <div class="html5-element">
+                <p><form class="" action="" method="post">
+                  <p>Календарь</p>
+                  <input type="date" name="" value="">
+                </form>
+              </p>
+              <p>
+                <form class="" action="index.html" method="post">
+                  <p>Поле поиска</p>
+                  <input type="search" name="" placeholder="Поиск по сайту" value="">
+                  <input type="submit" name="" value="Найти">
+                </form>
+              </p>
+              <form class="" action="index.html" method="post">
+                <p>Поле для ввода номера телефона. Такое же как и текстовое поле, но можно задействовать атрибут pattern, который будет проверять правильность введенных данных, как например я задействовал здесь (pattern="29-[0-9]{3}-[0-9]{2}-[0-9]{2}")</p>
+                <p>Введите номер формата 29-XXX-XX-XX:()</p>
+                <input type="tel" name="" value="" pattern="29-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+              </form>
+              </div>
+              <p>Сейчас я почитаю про автофокус, группировку элементов формы и прочие ништяки, а после этого сделаем полноценную форму для регистрации пользователя (без обработчика). И на этом изучение HTML для создания форм можно закончить, а формы отложить до изучения JS. </p>
+            </div>
+            <div class="main-form-div">
+              <p class="header-form">Добро пожаловать на наш сайт!</p>
+              <p>Для продолжения заполните форму регистрации нового пользователя.</p>
+              <form class="main-form" action="" method="post">
+                <fieldset>
+                  <legend>Authorization</legend>
+                <p><label for="login">Login:</label> <input type="text" id="login" name="user-id" placeholder="Введите логин сюда"></p>
+                <p><label for="pass">Password:</label> <input type="password" id="pass" name="user-pass" placeholder="Введите пароль сюда"></p>
+                <p><label for="email">E-mail:</label> <input type="email" id="email" name="user-email" placeholder="Введите E-mail сюда"></p>
+                </fieldset>
+              </form>
+                <h2>Форма заказа "Сандали"</h2>
+              <form class="sandali">
+                  <p>Хотите приобрести такие сандали, которых ни у кого нет? Закажите обувь у <em>нас</em> - и Вам будут завидовать все окружающие!</p>
+                  <p>Сведения о заказчике:</p>
+                  <ol>
+                  <li>  <label>Имя: <input type="text" required name="name" title="Сюда вводят имя" placeholder="Введите имя"></label></li>
+                  <li><label>E-mail: <input type="email" required name="email" title="Сюда вводят электронную почту" placeholder="Введите E-Mail"></label></li>
+                  <li><label>Телефон: <input type="tel" name="phone" pattern="29[0-9]{}" placeholder="в формате 29XXXXXXX" title="Сюда вводят телефон"> </label></li>
+                  </ol>
+                  <label><p>Я хочу такие сандали, потому что...</p>
+                  <textarea name="story" rows="4" cols="60" maxlength="300" placeholder="Не более 300 символов..."></textarea></label>
+                  <h3>Выберите дизайн сандалей:</h3>
+                <fieldset>
+                  <legend>Характеристика</legend>
+                  <fieldset>
+                    <legend>Выберите цвет<em>(только один пункт)</em></legend>
+                      <ol>
+                          <li><input type="radio" name="color" value="red">Красный</li>
+                          <li><input type="radio" name="color" value="blue">Синий</li>
+                          <li><input type="radio" name="color" value="black">Черный</li>
+                          <li><input type="radio" name="color" value="silver">Серебристый</li>
+                        </ol>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Дополнительно<em>(выберите один или несколько пунктов)</em></legend>
+                    <ol>
+                      <li><input type="checkbox" name="features[]" value="oth-1">Глянцевые ободки</li>
+                      <li><input type="checkbox" name="features[]" value="oth-2" checked>Металлическая бляшка</li>
+                      <li><input type="checkbox" name="features[]" value="oth-3">Светящаяся подошва</li>
+                      <li><input type="checkbox" name="features[]" value="oth-4">Mp3-проигрыватель</li>
+                    </ol>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Размер</legend>
+                    Стандартные российские размеры:
+                    <select name="size">
+                      <option value="33">33</option>
+                      <option value="34">34</option>
+                      <option value="35">35</option>
+                      <option value="36">36</option>
+                      <option value="37">37</option>
+                      <option value="38">38</option>
+                      <option value="39">39</option>
+                      <option value="40">40</option>
+                      <option value="41">41</option>
+                      <option value="42">42</option>
+                      <option value="43">43</option>
+                    </select>
+                  </fieldset>
+                </fieldset>
+                <input type="submit" name="button" value="Заказать!">
+                <input type="reset" name="" value="Сброс">
+              </form>
+            </div>
+            <table>
+              <caption>Отличия между GET and POST</caption>
+              <tr>
+                <th></th>
+                <th>GET</th>
+                <th>POST</th>
+              </tr>
+              <tr>
+                <td>Ограничение на объём</td>
+                <td>4 Кб</td>
+                <td>Ограничения задаются сервером.</td>
+              </tr>
+              <tr>
+                <td>Передаваемые данные</td>
+                <td>Видны сразу всем.</td>
+                <td>Видны только при просмотре через расширения браузера или другими методами.</td>
+              </tr>
+              <tr>
+                <td>Кэширование</td>
+                <td>Страницы с разными запросами считаются различными, их можно кэшировать как отдельные документы.</td>
+                <td>Страница всегда одна.</td>
+              </tr>
+              <tr>
+                <td>Закладки</td>
+                <td>Страницу с запросом можно добавить в закладки браузера и обратиться к ней позже.</td>
+                <td>Страницы с разными запросами имеют один адрес, запрос повторить нельзя.</td>
+              </tr>
+              <tr>
+                <td>Для чего используются</td>
+                <td>Передача небольших текстовых данных на сервер; поиск по сайту. Поисковые системы, формы поиска по сайту всегда отправляются методом GET, это позволяет делиться результатами поиска с друзьями, слать ссылку по почте или выкладывать её на форуме.</td>
+                <td>Пересылка файлов (фотографий, архивов, программ и др.); отправка комментариев; добавление и редактирование сообщений на форуме, блоге.</td>
+              </tr>
+            </table>
+            <div class="atr">
+              <p>Формы имеют следующий набор атрибутов:</p>
+              <ul>
+                <li>name="текст" - содержит уникальное имя переменной элемента формы </li>
+                <li>value=" текст" - содержит значение, которое отправиться на сервер с name</li>
+                <li>type="submit|reset|button" - тип кнопки</li>
+                <li>action="url-адрес" - расположение программы-обработчика данных формы (обязательный атрибут)
+</li>
+                <li>method="get|post" - метод отправки данных на сервер</li>
+                <li>enctype="тип контента" - метод кодирования, обычно или application/x-www-form - urlencoded (установлен по умолчанию) или multipart/form-data</li>
+                <li>input - создает различные элементы формы в зависимости от значения атрибута type</li>
+                <li>type="submit|reset|button|text|password|checkbox|radio|image|file ext" - тип элемента input</li>
+                <li>required - указывает, что поле элемента формы обязательно к заполнению пользователем</li>
+                <li>placeholder=" текст" - Предоставляет краткую подсказку, помогающую пользователю ввести верные данные</li>
+              </ul>
+            </div>
+            <div class="">
+            </div>
+            <div>
+              <p></p>
+            </div>
+            <div>
+              <h3>Конспектная часть</h3>
+              <dl>
+                <dt>Обеспечение доступности форм</dt>
+                <dd>Чрезвычайно важно продумать возможности восприятия и навигации по формам на вашем сайте для посетителей, которые не могут в полной мере воспользоваться функциями визуальных браузеров. Элементы формы label, fieldset и legend повышают доступность, создавая четкие семантические связи между компонентами формы. Итоговая разметка становится не только многофункциональнее в семантическом смысле, но в ней также появляется больше элементов, которые можно задействовать в качестве «якорей», для привязки правил CSS. Выигрывают все!</dd>
+                <dt>Избегайте ненужных вопросов</dt>
+                <dd>Помогите своим пользователям справиться с вашей формой как можно быстрее — не добавляйте в нее вопросы, которые не являются абсолютно необходимыми для выполнения поставленной задачи. Дополнительные вопросы не только замедляют процесс, но и могут вызвать у пользователя подозрения относительно мотивов, по которым вы их задаете. Если у вас есть другой способ получения информации (например, тип банковской карты можно определить по ее первым четырем цифрам), используйте альтернативные средства и не нагружайте пользователя. Если какую-то информацию вы хотели бы знать, но она необязательна, стоит подумать о том, чтобы спросить ее позже, после отправки формы и налаживания отношений с пользователем.</dd>
+                <dt>Группируйте элементы формы</dt>
+                <dd>Множество полей, списков и кнопок формы проще проанализировать, если они визуально сгруппированы по темам. Например контактные данные пользователя могут быть представлены в компактной группе так, что пять или шесть полей ввода будут восприниматься как одно целое. Как правило, вам нужен только ненавязчивый указатель, например тонкая горизонтальная линия и немного дополнительного пространства. Не переусердствуйте. </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <a class="main-button up" href="#top" title="Подняться вверх">вверх</a>
+        <a class="main-button up" href="../index.html" title="Вернуться на главную страницу">на главную</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="container clearfix">
+      <div class="copyright">
+        <p>Брест &#169 2019<br />Никакие права не защищены</p>
+      </div>
+      <div class="media">
+        <ul>
+          <li>Я в VK: <a href="https://vk.com/iceman_fan" title="Зайди и посмотри на меня" target="_blank">Андрей Сенько</a></li>
+          <li>E-mail: <a href="mailto:asenkor@gmail.com" title="Напиши мне письмо">asenkor@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
