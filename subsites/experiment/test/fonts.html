@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/fonts.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+  <title>Шрифты</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 id="top"><a class="main" href="../index.html" title="На главную полигона">Испытательный полигон</a></h1>
+    </div>
+  </div>
+  <div class="main">
+    <div class="container">
+
+      <div class="post">
+        <div class="buttons">
+          <a class="main-button up" href="#text" title="Перейти к конспектной части">Конспект</a>
+          <a class="main-button up" href="#atr" title="Перейти к атрибутам">Атрибуты</a>
+        </div>
+        <div class="post-name ">
+          <h3>CSS. Изучаем шрифты</h3>
+        </div>
+        <div class="post-date">15 мая 2019 года</div>
+        <div class="post-body">
+          <!-- Здесь пишем краткую вводную справку -->
+          <p>С давних времен каждую первую букву абзаца старались нарисовать, расписать так, чтобы она выделялась, отличалась от остального текста. Каждый переписчик книг старался написать текст красивыми буквами. Теперь существует целая наука,
+            изучающая шрифты, - <strong>типографика</strong>. Она изучает шрифты, их виды и восприятие их человеком. В печатном деле это важная часть производства, ведь всем хочется читать статьи, набранные интересным, приятным для чтения, шрифтом.
+            С приходом в веб HTML 5-ой ревизии веб-странички стали приближаться по качеству исполнения к разворотам глянцевых журналов, причем до такой степени, что многие издательства целиком ушли в сеть, оставив печатную продукцию как архаизм.
+            Поэтому я того, кто только сейчас начинает изучать процесс создания сайтов(меня) типографика если не обязательна для изучения, все-таки это больше прерогатива дизайнера, но как минимум должен иметь представление о работе с шрифтами.
+            Поэтому затронем здесь технические моменты шрифтов, пользуясь книгой "<i>Большая книга CSS3</i>".</p>
+          <h4>Щрифты</h4>
+          <!-- Здесь оформляем сами эксперименты -->
+          <p>Шрифт устанавливается обычным свойством font-family. Шрифтов очень много, но их можно разделить на 3 общих группы:</p>
+          <dl>
+            <dt><b>Serif</b> - шрифты с засечками</dt>
+            <dd>Семейство шрифтов, которое имеет на конце основных линий букв дополнительные засечки. Используются для набора больших блоков текста, по мнению многих засечки как бы связывают буквы друг с другом и облегчают чтение. Подавляющее
+              большинство книг напечатаны шрифтами с засечками. С другой стороны существует мнение, что на экране устройств для чтения лучше использовать шрифты без засечек. Представители: <span style="font-family:'Times New Roman'">Times New Roman</span>,
+              <span style="font-family: Georgia">Georgia</span> и прочие.</dd>
+            <dt><b>Sans-serif</b> - шрифты без засечек</dt>
+            <dd>Семейство шрифтов без засечек, нарочно минималистичное, но в то же время стильное. Используется для заголовков, для небольших блоков текста. В связи с распространенным мнением об удобности для чтения в сети шрифты без засечек
+              используются очень часто для набора всего текста на сайте. Представители: <span>Arial</span>(которым набрана эта страница), <span style="font-family: Tahoma">Tahoma</span>, <span style="font-family: Verdana">Verdana</span>.</dd>
+            <dt><b>Monotype</b> - шрифты с одинаковой шириной букв</dt>
+            <dd>Моноширинные шрифты используются для выделения строк кода в тексте, в имитации печатного текста, технической информации. Код выделяють из-за того, что в большинстве редакторов кода программист видит текст <span style="font-family: 'Courier New'">именно
+                таким</span>. Для имитации печатного текста - именно так выглядел текст в печатных машинках пару десятилетий тому назад, когда все отпечатки символов были одинаковыми. Представители: <span style="font-family: 'Courier New'">Courier
+                New</span>, <span style="font-family: 'Lucida Console'">Lucida Console</span>.</dd>
+          </dl>
+          <p>Отдельно можно выделить так называемые <b>веб-шрифты</b>, которые подключаются к странице из Интернета. То есть мы отдельно прописываем такие шрифты в источниках для загрузки, а браузер сам загружает с указанного источника и отображает
+            на жкране пользователя. Это достаточно редкие шрифты, даже несмотря на растущую их популярность. Они используются в узких местах, где их отсутствие и невозможность загрузки не разрушат дизайн. Ну и еще их можно использовать в различных
+            дизайнерских заголовках и лэндинг страничках. Примеров очень много: для некоторых заказов дизайнеры проектируют свои собственные шрифты.</p>
+          <p>Для примера 3 абзаца с разными шрифтами:</p>
+          <h4>font-family: Georgia</h4>
+          <p style="font-family: Georgia">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+          <h4>font-family: Tahoma</h4>
+          <p style="font-family: Tahoma">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+          <h4>font-family: Courier New</h4>
+          <p style="font-family: 'Courier New'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+          <p>Использовать веб-шрифты сейчас стало проще благодаря Google и их системе <b>Google Fonts</b>. Чтобы использовать такой у себя на странице достаточно двух вещей: директивы @font-face (которая указывает браузеру, что необходимо загрузить
+            шрифт) и font-family, как и с обычным шрифтом.</p>
+          <p>Поэкспериментируем с этим. Скачаем какой-нибудь рандомный шрифт, поместим его в папку CSS (но в дальнейшем желательно использовать отдельную папку Fonts, для порядка). Нам нужен файл с расширением .ttf - это наш шрифт в формате
+            TrueType. Дальше вступает в действие директива @font-face.
+            <div class="code">
+              @font-face {<br />
+              font-family: "October Twilight";<br />
+              src: url('css/October_Twilight.ttf');<br />
+              }
+            </div>
+            Мы говорим браузеру: "при упоминании такого-то шрифта в папке css найди файл такой-то и загрузи." А уже после этого мы можем упомянуть этот шрифт, который браузер подгрузит из папки и отобразит нам. Причем я установил экспериментально,
+            что указывать путь к файлу нужно относительно файла .css. Забавно, что когда я пытался отобразить, шрифт не менялся из-за того, что я поставил не те кавычки в объявлении шрифта. Ох уж эти компьютеры=)
+          </p>
+          <h4>font-family: "October Twilight"</h4>
+          <p style="font-family: 'October Twilight'">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.</p>
+          <h2>Beautiful header!</h2>
+          <p>Что-то мне подсказывает, что не обязательно называть шрифт своим же именем при объявлении в директиве. Сейчас попробую записать в директиве New вместо имени шрифта и вызвать его. UPD: Да, это сработало.</p>
+          <p>На данный момент разработано довольно много <b>типов шрифтов</b>. Перечислим некоторые из них. </p>
+          <ul>
+            <li><b>EOT</b>. Шрифты Embedded Open Type работают только в Internet Explorer. Чтобы преобразовать обычный шрифт в EOT-формат, потребуется специальное программное средство, но сделать это можно и на таких сайтах, как FontSquirrel.</li>
+            <li><b>True Type и Open Type</b>. Если заглянуть в папку Fonts вашего компьютера, то там наверняка найдутся файлы шрифтов с расширениями TTF (True Type) или OTF (Open Type). Эти форматы чаще всего используются в качестве компьютерных
+              шрифтов. Их можно применять для обработки текста и вывода его на экран, а также для веб-страниц. Эти типы шрифтов имеют широкую поддержку в большинстве веб-браузеров: Internet Explorer 9 и выше, Firefox, Chrome, Safari, Opera, iOS
+              Safari (версии 4.2 и выше), Android и Blackberry Browser.</li>
+            <li><b>WOFF</b>. Файлы Web Open Font Format представляют собой самый новый формат шрифта, разработанный специально для веб-технологий. WOFF-шрифты, по сути, являются сжатой версией шрифтов TrueType или Open Type. Это означает, что
+              WOFF-шрифты обычно имеют меньший размер файла и загружаются быстрее других шрифтов. WOFF-формат имеет также широкую поддержку со стороны браузеров, включая InternetExplorer 9 и выше, Firefox, Chrome, Safari, Opera, Blackberry Browser и
+              iOS Safari версии 5 и выше. Наиболее заметным исключением является Android. Иными словами, если у вас используются только WOFF-шрифты, посетители, применяющие мобильные устройства Android или работающие с Internet Explorer 8, не смогут
+              загрузить ваши шрифты и вывести их на экран.</li>
+            <li><b>SVG</b>. Scalable Vector Graphic формат (масштабируемой векторной графики) сам по себе не является форматом шрифта. По сути, это способ создания векторной графики (то есть такой графики, которая может масштабироваться без потери
+              качества). Поддержка SVG-шрифтов ограничена куда существеннее. SVG-формат не поддерживается ни Internet Explorer, ни Firefox. Другой проблемой, связанной с SVG, является то, что данный формат создает файлы, зачастую в два раза длиннее,
+              чем файлы форматов TrueType, и в три раза длиннее файлов со шрифтами формата WOFF. Единственное реальное преимущество SVG — только этот формат шрифта способны разобрать более старые версии iOS с запущенными браузерами Safari версии 4.1
+              или более ранних версий.</li>
+          </ul>
+          <p>Большинство шрифтов являются платными, т.е. их разрабатывают для коммерческого использования. Нужно быть осторожным и искать по возможности бесплатные шрифты, благо сайтов-источников сейчас полно. Есть одно <b>но.</b> Большинство таких
+            бесплатных источников предоставляют шрифты в формате TTF или OTF, которые некоторыми браузерами не поддерживаются. Для решения этой проблемы можно использовать сайты наподобие <a class="link" href="https://www.fontsquirrel.com/" title="Перейти к сайту"
+              target="_blank">Fontsquirrel</a>, которые генерируют нужные нам форматы шрифтов.</p>
+          <p>Чтобы загрузить несколько типов шрифтов в директиве @font-face в атрибуте src необходимо всего лишь дописать пути на эти форматы, попутно добавив тип фаула после каждой записи. Что-то вроде этого:
+            <div class="code">@font-face {<br />
+              font-family: 'October Twilight';<br />
+              src: url('fonts/October_Twilight.eot?#iefix') format('embedded-opentype'),<br />
+              url('fonts/October_Twilight.woof') format('woff'),<br />
+              url('fonts/October_Twilight.ttf') format('truetype'),<br />
+              url('fonts/October_Twilight.svg') format('svg');</div>
+          </p>
+          <p>Обычно веб-шрифты содержат лишь одну версию начертания (обычный, или курсивный, или жирный), поэтому при необходимости скачивают сразу все необходимые файлы шрифтов, создавая для каждого файла директиву @font-face:</p>
+          <p>для нормального начертания:
+            <div class="code">
+              @font-face {<br />
+              font-family: 'PTSans';<br />
+              src: url('PTSansRegular.eot');<br />
+              src: url('PTSansRegular.eot?#iefix') format('embedded-opentype'),<br />
+              url('PTSansRegular.woof') format('woff'),<br />
+              url('PTSansRegular.ttf') format('truetype'),<br />
+              url('PTSansRegular.svg') format('svg');<br />
+              font-weight: normal;<br />
+              font-style: normal;<br />
+              }
+            </div>
+            для курсивного начертания:
+            <div class="code">
+              @font-face {<br />
+              font-family: 'PTSans';<br />
+              src: url('PTSansItalic.eot');<br />
+              src: url('PTSansItalic.eot?#iefix') format('embedded-opentype'),<br />
+              url('PTSansItalic.woof') format('woff'),<br />
+              url('PTSansItalic.ttf') format('truetype'),<br />
+              url('PTSansItalic.svg') format('svg');<br />
+              font-weight: normal;<br />
+              font-style: italic;<br />
+            </div>
+          </p>
+          <p>Такая запись сообщает браузеру, где находятся те или иные версии файла шрифта. Если в тексте мы используем < em> или < strong>, браузер просто загружает файл курсива из той директивы, которую мы указали под font-style: italic.</p>
+          <p>Думаю, теперь можно попробовать сервис Google Fonts. К следующему тексту добавим внешний шрифт с помощью GF, пусть будет Open Sans. UPD: спустя какое-то время я еще добавил псевдокласс ::first-letter для форматирования первой буквы абзаца.</p>
+          <p style="text-align: center">Без шрифта:</p>
+          <div class="nogf">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="box clearfix"><p style="text-align: center">С шрифтом:</p>
+          <div class="nogf gf gf1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="nogf gf gf2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <p>Все очень легко: зашли на сервис, выбрали шрифт, который подходит, добавили в коллекцию, в меню Customize выбрали нужные параметры шрифта (я выбрал здесь Normal 400 и light 300) и скопировали выданный код, вставив его в начало страницы HTML. Ну или есть возможность вставить через директиву @import, когда код по ссылке импортируется в нащу страницу. Вот и всё.</p>
+          <div>
+            <!-- здесь пишем атрибуты -->
+            <div class="atr" id="atr">
+              <p>Как таковых атрибутов у шрифтов нет. Разве что считать таковыми размер, написание, начертание. Но это все отнесем к тексту.</p>
+            </div>
+            <div class="">
+            </div>
+            <div>
+              <p></p>
+            </div>
+            <div>
+              <h3 id="text">Конспектная часть</h3>
+              <dl>
+                <dt>Особенности</dt>
+                <dd>Отдельный файл шрифта содержит только одну плотность и один стиль для этого шрифта. Иначе говоря, если нужно получить полужирный, курсивный или полужирный и курсивный тексты, следует загрузить отдельные файлы шрифтов для каждого
+                  варианта. Некоторые шрифты, особенно имеющие забавный внешний вид, включают только один вариант и больше подходят для заголовков или текста, где не нужны курсивные или полужирные версии. </dd>
+                <dt>@font-face</dt>
+                <dd>Для каждого шрифта, который нужно использовать, применяется одна директива @font-face. Если используются три шрифта, понадобятся три директивы @font-face. Лучше всего хранить их сгруппированными и помещать в верхнюю часть таблицы
+                  стилей, чтобы браузер сразу же мог начать их загрузку.</dd>
+                <dt>Загрузка шрифтов</dt>
+                <dd>Даже если браузер способен понимать различные типы шрифтов (например, Chrome может использовать шрифты WOFF, TrueType и SVG), он не станет загружать все файлы шрифтов. Вместо этого помере чтения списка типов шрифтов браузер
+                  загружает только первый шрифт, который ему понятен. Иначе говоря, если браузеру Chrome попадется показанный выше код, он пропустит файл с расширением EOT, поскольку этот формат шрифта ему непонятен, а загрузит файл с расширением
+                  WOOF. Затем он целиком пропустит файлы с форматами TrueType и SVG. Из этого следует, что порядок, в котором перечислены шрифты, играет важную роль. Формат WOOF в большинстве случаев более предпочтителен, поскольку его файлы меньше
+                  по размеру и загружаются быстрее, а формат SVG намного больше по размеру, поэтому нужно убедиться, что шрифты перечислены в следующем порядке: EOT, WOOF, TTF и SVG.</dd>
+                <dt>Особенности тэгов в HTML5</dt>
+                <dd>В HTML5 теги < b > (для полужирного шрифта) и < i > (для курсива) заняли свое прежнее место. Их можно использовать только для презентационных целей, когда нужно, чтобы текст был курсивным, но без добавления к его смыслу какой-нибудь реальной выразительности. А при использовании тега < em > текст будет акцентирован, что заставит программу чтения с экрана прочитать его громче, не так, как другой текст.</dd>
+                <dt>Оформление</dt>
+                <dd>Текст веб-страницы выделяют самыми различными способами. Этого можно добиться посредством изменения размера шрифта определенного фрагмента текста, отдельных слов или с помощью контрастности. Окрашивание текста в темный, светлый или более яркий оттенок визуально выделяет его. Применение контрастности — одно из наиболее важных правил хорошего графического дизайна. Контрастность может помочь акцентировать важные сообщения, фрагменты текста, привлечь внимание</dd>
+                <dt>Сокращенное свойство</dt>
+                <dd>Многократный повторный набор стилевых свойств — достаточно утомительное занятие, особенно если нужно использовать несколько различных текстовых свойств сразу. К счастью, в CSS есть свойство font, облегчающее написание стилей. Оно позволяет объединять несколько свойств водну строку: font-style, font-variant, font-weight, font-size, line-height и font-family. Рассмотрим, например, следующее объявление:
+                  <div class="code">
+                    font: italic bold small-caps 18px/150% Arial, Helvetica, sans-serif;
+                  </div>
+                     Оно приводит к созданию полужирного, курсивного шрифта с малыми прописными буквами размером 18 пикселов, семейства Arial (или Helvetica, или sansserif ) с межстрочным интервалом 150 %. Имейте в виду следующие правила: не обязательно применять все эти свойства, но нужно включить размер шрифта и начертание (семейства шрифтов): font: 1.5em Georgia, Times,serif; используйте один пробел между каждым значением свойства, а запятую только для того, чтобы отделить семейства шрифтов в списке: Arial,Helvetica, sans-serif; определяя межстрочный интервал, добавляйте слеш после размера шрифта, за которым должно следовать значение самого межстрочного интервала: % 1.5em/150 или 24px/37px; последние два свойства должны быть комбинацией: размер шрифта/межстрочный интервал (или font-size/line-height); все остальные могут быть перечислены в любом порядке. Например, оба объявления:— font: italic bold smallcaps 1.5em Arial и font: bold small-caps italic 1.5em Arial; ­— равнозначны и к ним применен одинаковый эффект. Наконец, исключение значения из списка означает то же, что и установка его по умолчанию. Допустим, вы создали стиль < p >, который форматирует все абзацы полужирным курсивым шрифтом с малыми прописными буквами и межстрочным интервалом 2000 % (совсем не обязательно это повторять). Затем создали стилевой класс под названием, скажем, .specialParagraph с таким объявлением стиля шрифта: font: 1.5em Arial; — и применили его к какому-то абзацу текста. В результате данный абзац не унаследует полужирное курсивое начертание с малыми прописными буквами и межстрочный интервал. Исключение этих четырех значений из стиля .specialParagraph можно приравнять к написанию следующего: font: normal normal normal 1.5em/normal Arial;.</dd>
+                <dt></dt>
+                <dd></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <a class="main-button up" href="#top" title="Подняться вверх">вверх</a>
+        <a class="main-button up" href="../index.html" title="Вернуться на главную страницу">на главную</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="container clearfix">
+      <div class="copyright">
+        <p>Брест &#169 2019<br />Никакие права не защищены</p>
+      </div>
+      <div class="media">
+        <ul>
+          <li>Я в VK: <a href="https://vk.com/iceman_fan" title="Зайди и посмотри на меня" target="_blank">Андрей Сенько</a></li>
+          <li>E-mail: <a href="mailto:asenkor@gmail.com" title="Напиши мне письмо">asenkor@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

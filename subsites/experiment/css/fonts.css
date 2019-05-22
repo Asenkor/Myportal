@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "October Twilight";
+  src: url('October_Twilight.ttf');
+}
+
+h4 {
+  text-align: center;
+}
+
+h2 {
+  font-family: "October Twilight";
+  font-size: 6em;
+  font-weight: normal;
+}
+.nogf{
+  color: rgb(243,134,48);
+  background-color: rgb(167,216,219);
+  padding: 10px;
+  margin: 10px auto;
+  width: 600px;
+  border-radius: 10px;
+  text-shadow: none;
+}
+.nogf::first-letter{
+  font-size: 1.3em;
+  color: red;
+}
+.gf{
+  width: 400px;
+}
+.gf1{
+  font-family: "Open Sans";
+  font-weight: 300;
+  float: left;
+}
+.gf2{
+  font-family: "Open Sans";
+  font-weight: 400;
+  float: right;
+}
