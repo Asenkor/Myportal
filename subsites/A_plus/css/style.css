@@ -44,6 +44,12 @@ nav a:last-child {
   margin-right: 0;
 }
 
+.header-link:hover {
+  border-bottom: 1px solid black;
+}
+.header-link:active {
+  opacity: 0.6;
+}
 .header_promo {
   width: 1070px;
   background: url('../img/items.png') no-repeat;
@@ -85,8 +91,15 @@ button {
   font-weight: bold;
   color: white;
   margin-bottom: 150px;
+  cursor: pointer;
+  border: none;
 }
-
+button:hover {
+  background-color: #00a666;
+}
+button:active {
+  opacity: 0.3;
+}
 /* Middle
 -----------------------------------------------------------------------------*/
 .content_profit {
@@ -140,6 +153,7 @@ button {
   margin-right: 33px;
   width: 190px;
   margin-top: 105px;
+  cursor: pointer;
 }
 
 .content_review_showall p {
@@ -148,6 +162,13 @@ button {
   font-weight: bold;
   margin-right: 33px;
   display: inline-block;
+
+}
+.content_review_showall p:hover {
+  color: #00a666;
+}
+.content_review_showall:active {
+  opacity: 0.4;
 }
 .content_review_userinfo {
   float: left;
@@ -235,6 +256,20 @@ button {
   color: #404040;
   box-sizing: border-box;
   border-radius: 3px;
+  border: 1px solid #b2b2b2;
+}
+.content_feedback_form input[type="text"]:hover {
+  border: 1px solid #7f7f7f;
+}
+.content_feedback_form input[type="text"]:focus {
+  border: 1px solid #00b770;
+  outline: none;
+}
+.content_feedback_form input[type="radio"] {
+  background-color: #f8f8f8;
+}
+.content_feedback_form input[type="radio"]:hover {
+  color: #999999;
 }
 .form_tdinput {
   padding-left: 27px;
@@ -257,6 +292,14 @@ button {
   font-size: 18px;
   color: #404040;
   box-sizing: border-box;
+  border: 1px solid #b2b2b2;
+}
+.content_feedback_form textarea:hover {
+  border: 1px solid #7f7f7f;
+}
+.content_feedback_form textarea:focus {
+  outline: none;
+  border: 1px solid #00b770;
 }
 .content_feedback_form input[type="submit"] {
   background-color: #00b770;
@@ -270,6 +313,12 @@ button {
   height: 65px;
   font-size: 18px;
   font-weight: bold;
+}
+.content_feedback_form input[type="submit"]:hover {
+  background-color: #00a666;
+}
+.content_feedback_form input[type="submit"]:active {
+  opacity: 0.9;
 }
 .content_feedback_interest {
   float: right;
@@ -305,7 +354,6 @@ footer {
   margin-top: 92px;
   float: left;
   width: 300px;
-  cursor: pointer;
 }
 .footer_adress {
   margin-top: 80px;
@@ -335,6 +383,18 @@ footer {
   margin-bottom: 33px;
   cursor: pointer;
 }
+.footer_list li:hover {
+  text-decoration: underline;
+}
+.footer_list li:active {
+  opacity: 0.3;
+}
+.footer_list li:first-child:hover {
+  text-decoration: none;
+}
+.footer_list li:first-child:active {
+  opacity: 1;
+}
 .footer_list ul>li:first-child {
   margin-bottom: 43px;
   color: white;
@@ -349,10 +409,38 @@ footer {
   width: 410px;
   float: left;
 }
-.footer_social img{
+.footer_social {
   float: right;
   margin-left: 22px;
+  /* cursor: pointer; */
+}
+.social_img {
+  width: 36px;
+  height: 36px;
+  float: right;
+  margin-left: 25px;
   cursor: pointer;
+}
+.fb {
+  background: url("../img/fb-logo.png") no-repeat;
+}
+.tw {
+  background: url("../img/twitter-logo.png") no-repeat;
+}
+.vk {
+  background: url("../img/vk-logo.png") no-repeat;
+}
+.fb:hover {
+  background: url("../img/fb-logo yellow.png") no-repeat;
+}
+.tw:hover {
+  background: url("../img/twitter-logo yellow.png") no-repeat;
+}
+.vk:hover {
+  background: url("../img/vk-logo yellow.png") no-repeat;
+}
+.social_img:active {
+  opacity: .3;
 }
 
 
