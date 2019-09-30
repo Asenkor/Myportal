@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  transition: all .3s;
+  font-family: 'Verdana', sans-serif;
+}
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row::after {
+  content: '.';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+[class*="span"] {
+  float: left;
+  display: inline;
+}
+/* [class*="span"]:last-child {
+  margin-right: 0;
+  float: right;
+} */
+.span1 {width: 90px;}
+.span2 {width: 180px;}
+.span3 {width: 270px;}
+.span4 {width: 360px;}
+.span5 {width: 450px;}
+.span6 {width: 540px;}
+.span7 {width: 630px;}
+.span8 {width: 720px;}
+.span9 {width: 810px;}
+.span10 {width: 900px;}
+.span11 {width: 990px;}
+.span12 {width: 1080px;}
+.offset1 {margin-left: 90px;}
+.offset2 {margin-left: 180px;}
+.offset3 {margin-left: 270px;}
+.offset4 {margin-left: 360px;}
+.offset5 {margin-left: 450px;}
+.offset6 {margin-left: 540px;}
+.offset7 {margin-left: 630px;}
+.offset8 {margin-left: 720px;}
+.offset9 {margin-left: 810px;}
+.offset10 {margin-left: 900px;}
+.offset11 {margin-left: 990px;}
+.offset12 {margin-left: 1080px;}
+
+
+
+
+.btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: gray;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-left: 40px;
+}

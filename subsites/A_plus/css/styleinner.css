@@ -1,5 +1,5 @@
 /* header {
-  height: 410px;
+  width: 410px;
 } */
 
 .header-h2 {
@@ -42,7 +42,7 @@ main {
 .table-right {
   padding-top: 65px;
   padding-right: 40px;
-  line-height: 24px;
+  line-width: 24px;
   font-size: 16px;
   width: 640px;
   border-bottom: 1px solid #d3d2d2;
@@ -71,7 +71,7 @@ td ul>li {
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  height: 48px;
+  width: 48px;
   width: 160px;
   text-align: left;
 }
@@ -81,10 +81,10 @@ td ul>li {
   vertical-align: middle;
 }
 .sched td{
-  height: 42px;
+  width: 42px;
 }
 .dif>td {
-  height: 48px;
+  width: 48px;
   text-transform: capitalize;
 }
 .table-div {

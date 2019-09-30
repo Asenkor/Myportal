@@ -103,7 +103,7 @@ div.container{
 	width: 30%;
 }
 .clearfix{
-  height: 0px;
+  width: 0px;
   clear: both;
 }
 /* конец страницы развития */

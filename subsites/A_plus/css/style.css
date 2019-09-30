@@ -15,7 +15,7 @@ body {
 /* Header
 -----------------------------------------------------------------------------*/
 header {
-  /* height: 765px; */
+  /* width: 765px; */
 	background-color: #ef9f13;
   background: url('../img/orangeback.png');
   background-size: cover;
@@ -24,7 +24,7 @@ header {
 .header_logo {
   margin-top: 68px;
   width: 182px;
-  height: 82px;
+  width: 82px;
 }
 
 nav {
@@ -68,7 +68,7 @@ nav a:last-child {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.2;
+  line-width: 1.2;
 
 }
 
@@ -77,14 +77,14 @@ nav a:last-child {
   margin-top: 37px;
   margin-bottom: 48px;
   color: #404040;
-  line-height: 1.5;
+  line-width: 1.5;
 
 }
 
 button {
   background-color: #00b770;
   width: 300px;
-  height: 65px;
+  width: 65px;
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
@@ -103,7 +103,7 @@ button:active {
 /* Middle
 -----------------------------------------------------------------------------*/
 .content_profit {
-  height: 255px;
+  width: 255px;
 }
 
 .content_profit section {
@@ -111,7 +111,7 @@ button:active {
   float: left;
 	margin-right: 40px;
   margin-top: 95px;
-  line-height: 1.5em;
+  line-width: 1.5em;
 }
 
 .content_profit section:last-child{
@@ -135,8 +135,8 @@ button:active {
 }
 .content_review {
 	background-color: #ffffff;
-  min-height: 415px;
-  line-height: 1.5em;
+  min-width: 415px;
+  line-width: 1.5em;
 }
 .container-2 {
   width: 1020px;
@@ -178,11 +178,11 @@ button:active {
 .content_review_userinfo_info  {
   width: 118px;
   float: right;
-  line-height: 24px;
+  line-width: 24px;
 }
 .content_review_userinfo img {
   width: 150px;
-  height: 150px;
+  width: 150px;
 }
 .content_review_userinfo_info p.user_name {
   font-size: 18px;
@@ -222,7 +222,7 @@ button:active {
 }
 .content_feedback {
 	background-color: #efefef;
-  height: 720px;
+  width: 720px;
 }
 .content_feedback_form {
   width: 640px;
@@ -247,7 +247,7 @@ button:active {
   vertical-align: 68px;
 }
 .content_feedback_form input[type="text"] {
-  height: 50px;
+  width: 50px;
   width: 465px;
   padding-left: 20px;
   padding-bottom: 18px;
@@ -285,7 +285,7 @@ button:active {
   margin-bottom: 20px;
 }
 .content_feedback_form textarea {
-  height: 105px;
+  width: 105px;
   width: 465px;
   padding-left: 20px;
   padding-top: 20px;
@@ -310,7 +310,7 @@ button:active {
   margin-top: 4px;
   cursor: pointer;
   width: 465px;
-  height: 65px;
+  width: 65px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -323,7 +323,7 @@ button:active {
 .content_feedback_interest {
   float: right;
   width: 300px;
-  line-height: 1.3em;
+  line-width: 1.3em;
 }
 .content_feedback_interest h4 {
   font-size: 18px;
@@ -347,7 +347,7 @@ button:active {
 footer {
   font-size: 18px;
   color: white;
-  height: 460px;
+  width: 460px;
 	background-color: #1f2022;
 }
 .footer_logo {
@@ -358,13 +358,13 @@ footer {
 .footer_adress {
   margin-top: 80px;
   width: 235px;
-  line-height: 1.5;
+  line-width: 1.5;
 }
 .footer_copyright {
   margin-top: 76px;
 }
 .footer {
-  height: 460px;
+  width: 460px;
 }
 .footer_nav {
   width: 640px;
@@ -416,7 +416,7 @@ footer {
 }
 .social_img {
   width: 36px;
-  height: 36px;
+  width: 36px;
   float: right;
   margin-left: 25px;
   cursor: pointer;

@@ -7,14 +7,14 @@
 }
 .article-img{
   width: 400px;
-  height: 113px;
+  width: 113px;
   display: block;
   margin: 15px auto;
   border-radius: 5px;
 }
 .article-img:hover{
   width: 420px;
-  height: 119px;
+  width: 119px;
   margin-top: 9px;
 }
 .button{
@@ -33,12 +33,12 @@
 }
 .btn-rectangle{
   width: 100px;
-  height: 90px;
+  width: 90px;
   border-radius: 10px;
 }
 .btn-circle{
   width: 100px;
-  height: 100px;
+  width: 100px;
   border-radius: 50%;
 }
 .btn-facebook{
@@ -59,7 +59,7 @@
 /* спрайты */
 .btn-sprite{
   background: url("../../../img/sprites.png") no-repeat;
-  height: 98px;
+  width: 98px;
   width: 98px;
 }
 .btn-f{
