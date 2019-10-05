@@ -165,6 +165,7 @@ p {
     color: black;
   }
 }
+<<<<<<< HEAD
 @media print {
   .menu {
     display: none;
@@ -183,3 +184,5 @@ p {
     text-align: justify;
   }
 }
+=======
+>>>>>>> aeca9fd2193373717d3b9d07740a4711b228ca6f
