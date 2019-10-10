@@ -1,0 +1,188 @@
+*, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: all .3s;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  background: url(https://assets.awwwards.com/awards/images/2015/04/pattern.jpg);
+}
+
+header {
+  height: 150px;
+  text-align: center;
+}
+h1 {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  line-height: 80px;
+  min-width: 400px;
+}
+header p {
+  color: black;
+  font-weight: bold;
+  width: 300px;
+  margin: 10px auto;
+}
+main::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.menu {
+  float: right;
+  width: 200px;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+li {
+  display: block;
+  color: white;
+  background: gray;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px;
+  border: 1px solid green;
+  border-radius: 5px;
+  text-align: center;
+}
+li:hover {
+  color: black;
+  background: darkgray;
+  cursor: pointer;
+}
+.text {
+  float: left;
+  width: 850px;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 7px;
+  margin: 10px;
+  margin-left: 100px;
+}
+.text::before {
+  content: 'Width больше чем 980px';
+  font-size: 14px;
+  color: white;
+  display: block;
+  border: 1px solid green;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+  margin: 5px auto;
+}
+p {
+  color: white;
+}
+.div1 {
+  background-color: #333;
+}
+.div2 {
+  background-color: #888;
+}
+.div3 {
+  background-color: #666;
+}
+
+.copyright {
+  text-align: center;
+  text-transform: uppercase;
+  color: gray;
+  margin: 10px;
+  height: 150px;
+  line-height: 150px;
+}
+@media screen and (max-width: 1220px) {
+  .text {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .text {
+    max-width: 600px;
+    }
+}
+@media screen and (max-width: 980px) {
+  .text {
+    width: 600px;
+    background-color: #aaa;
+    float: none;
+    margin: 10px auto;
+  }
+  .text::before {
+    content: 'Width меньше чем 980px';
+    font-size: 14px;
+    color: white;
+    display: block;
+    border: 1px solid green;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    margin: 5px auto;
+  }
+  .menu {
+    float: none;
+    width: 600px;
+    margin: 5px auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text {
+    width: 300px;
+    background-color: lightblue;
+    margin: 10px auto;
+    float: none;
+  }
+  .text::before {
+    content: 'Width меньше чем 600px';
+    font-size: 14px;
+    color: black;
+    display: block;
+    width: 200px;
+    border: 1px solid green;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px auto;
+  }
+  .div2, .div3 {
+    height: 200px;
+    overflow: scroll;
+  }
+  .menu {
+    width: 300px;
+  }
+  li {
+    line-height: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: black;
+  }
+}
+<<<<<<< HEAD
+@media print {
+  .menu {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .text {
+    float: none;
+    border: none;
+    font-size: 22px;
+    font-family: 'times new roman', serif;
+    text-indent: 20px;
+  }
+  .text p{
+    text-align: justify;
+  }
+}
+=======
+>>>>>>> aeca9fd2193373717d3b9d07740a4711b228ca6f

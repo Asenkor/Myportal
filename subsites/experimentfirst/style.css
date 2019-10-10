@@ -31,14 +31,14 @@ p {
 .wrapper {
   box-sizing: border-box;
   background-image: radial-gradient(#A4CED1, #6BA6AC);
-  height: 250vh;
+  width: 250vh;
   padding-top: 160px;
 }
 .popup {
   box-sizing: border-box;
   background-image: linear-gradient(#54858C, #6BA6AC);
   width: 400px;
-  min-height: 280px;
+  min-width: 280px;
   padding: 70px 32px;
   margin: 0 auto;
   border-radius: 4px;
@@ -104,13 +104,13 @@ p {
   position: absolute;
   top: -70px;
   left: 150px;
-  height: 130px;
+  width: 130px;
   width: 100px;
    animation: photo-appearance .75s ease-in-out;
 }
 .button_icon {
 	width: 45px;
-	height: 45px;
+	width: 45px;
 	position: absolute;
 	left: 17px;
   bottom: 9px;
@@ -121,7 +121,7 @@ p {
 .wrapper-fin {
   box-sizing: border-box;
   background-image: radial-gradient(#A4CED1, #6BA6AC);
-  height: 300vh;
+  width: 300vh;
   padding-top: 30px;
 }
 .p-fin{

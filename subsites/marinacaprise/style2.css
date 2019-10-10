@@ -13,7 +13,7 @@ div{
   /* border: 1px solid red; */
   padding: 10px;
   margin: 10px auto;
-  line-height: 1.7em;
+  line-width: 1.7em;
 }
 div.wrapper{
 	background-color: rgba(255,255,255,0.4);
@@ -39,7 +39,7 @@ div.header>a{
 	margin: 0 auto;
 	text-align: center;
 	font-size: 16px;
-	line-height: 1em;
+	line-width: 1em;
 }
 div.header>a:hover{
 	background-color: rgba(70,170,170, 0.5);
@@ -55,7 +55,7 @@ div.header>h1{
 }
 div.nav{
 	min-width: 600px;
-	height: 200px;
+	width: 200px;
 	text-align: center;
 	padding: 40px;
 	margin-top: 10px;
@@ -75,7 +75,7 @@ div.nav>a:hover{
 }
 div.answer{
 	width: 600px;
-	min-height: 400px;
+	min-width: 400px;
 	padding: 10px 20px;
 	text-align: justify;
 }
@@ -99,7 +99,7 @@ div.fixed>a{
 	border: 1px solid blue;
 	border-radius: 7px;
 	width: 90px;
-	height: 40px;
+	width: 40px;
 	font-size: 26px;
 	text-align: center;
 	margin: 0 auto;
@@ -117,7 +117,7 @@ div.footer{
 	padding-right: 30px;
 	text-align: left;
 	font-size: 16px;
-	line-height: 1.3em;
+	line-width: 1.3em;
 	float: right;
 }
 .clearfix{

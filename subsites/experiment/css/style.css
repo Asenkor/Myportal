@@ -5,7 +5,7 @@ body {
   padding: 0;
   background: #ddd;
   color: #555;
-  line-height: 1.5em;
+  line-width: 1.5em;
   text-shadow: 1px 0px .1px rgb(255,255,255);
 }
 
@@ -86,7 +86,7 @@ a.main-button:hover {
   padding-top: 30px;
   width: 960px;
   margin: 0 auto;
-  min-height: 300px;
+  min-width: 300px;
 }
 
 .post-name {
@@ -107,7 +107,7 @@ a.main-button:hover {
   width: 910px;
   padding: 5px 10px;
   margin: 0 auto;
-  min-height: 200px;
+  min-width: 200px;
   text-align: justify;
   text-indent: 20px;
 }
@@ -146,7 +146,7 @@ a.up {
   float: left;
   width: 300px;
   padding-left: 20px;
-  line-height: 2em;
+  line-width: 2em;
 }
 
 .media {

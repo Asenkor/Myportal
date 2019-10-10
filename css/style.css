@@ -1,7 +1,7 @@
 body{
   font-family: Verdana, sans-serif;
   font-size: 18px;
-  line-height: 1.5em;
+  line-width: 1.5em;
   color: rgb(60, 60, 60);
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body{
 
 .header-logo{
   width: 150px;
-  height: 150px;
+  width: 150px;
   opacity: 0.7;
   float: left;
   margin-left: 30px;
@@ -121,14 +121,14 @@ body{
 
 a.up-button{
 	width: 60px;
-	height: 18px;
+	width: 18px;
 	font-size: 16px;
 	display: block;
 	/* bottom: 25px; */
 	/* position: absolute; */
 	margin: 0 auto;
 	padding: 5px;
-	line-height: 1em;
+	line-width: 1em;
 }
 
 .about{
