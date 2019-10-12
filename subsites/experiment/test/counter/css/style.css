@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Verdana, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	counter-reset: section;
+}
+h1 {
+	text-align: center;
+	margin: 20px auto;
+	font-size: 30px;
+	color: #333;
+	text-transform: uppercase;
+	counter-reset: paragraf;
+}
+h1::before {
+	counter-increment: section;
+	content: "Section " counter(section) ": ";
+}
+p {
+	text-indent: 20px;
+	text-align: justify;
+	width: 900px;
+	margin: 10px auto;
+	margin-bottom: 30px;
+}
+p::before {
+	counter-increment: paragraf;
+	content: "Paragraf " counter(paragraf) ": ";
+}
+.container2 {
+	width: 600px;
+	margin: 10px auto;
+	counter-reset: figure;
+}
+.container2::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.fig {
+	float: left;
+	margin-right: 150px;
+}
+.fig::before {
+	counter-increment: figure;
+	content: "Фигура " counter(figure) ": ";
+	left: -100px;
+	position: relative;
+} 
+.circle {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border-radius: 50%;
+}
+.rectangle {
+	width: 200px;
+	height: 100px;
+	background-color: #444;
+	border-radius: 5px;
+}
