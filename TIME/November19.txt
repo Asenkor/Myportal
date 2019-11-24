@@ -20,3 +20,8 @@
 14.11.2019 
 
 21.00 Css Grid 22.30 (90 min)
+
+24.11.2019
+
+20.30 grid 23.00 (150 min)
+23.05 grid mediaquerries 23.40 (35min)

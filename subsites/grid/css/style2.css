@@ -1,0 +1,50 @@
+body {
+  display: grid;
+  grid-template-areas:
+  "nav header header"
+  "nav article aside"
+  "nav footer footer";
+  grid-template-columns: 100px 1fr 200px;
+  grid-template-rows: 50px 1fr 50px;
+  grid-gap: 10px;
+  height: 100vh;
+}
+header,footer,nav,article,aside {
+  background: #666;
+  padding: 20px;
+}
+#header {
+  grid-area: header;
+}
+#article {
+  grid-area: article;
+}
+#nav {
+  grid-area: nav;
+}
+#aside {
+  grid-area: aside;
+}
+#footer {
+  grid-area: footer;
+}
+
+a {
+  display: block;
+  height: 50px;
+  width: 120px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  position: fixed;
+  bottom: 30px;
+  left: 45%;
+  line-height: 50px;
+}
+
+a:hover {
+  background: #222;
+  color: white;
+}
