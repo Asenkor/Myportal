@@ -25,3 +25,24 @@
 
 20.30 grid 23.00 (150 min)
 23.05 grid mediaquerries 23.40 (35min)
+
+25.11.2019 
+
+21.00 верстка 22.00 (60 мин)
+22.50 verstka 23.40 (50min)
+
+26.11.2019 
+
+20.30 verstka simplepage 23.00 (150 min)
+
+27.11.2019 
+
+21.45 verstka simplepage 22.00 (15 min)
+
+30.11.2019 
+
+00.10 verstka simplepage 01.10 (60 min)
+10.00 simplepage 11.00 (60min)
+22.30 simplepage 23.00 (30 min)
+
+
