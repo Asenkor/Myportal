@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Raleway-medium";
+  src: url("./fonts/Raleway/Raleway-Medium.ttf");
+}
+@font-face {
+  font-family: "Raleway-regular";
+  src: url("./fonts/Raleway/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway-bold";
+  src: url("./fonts/Raleway/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "Opensans-semibold";
+  src: url("./fonts/OpenSans/OpenSans-SemiBold.ttf");
+}
+.container {
+  width: 90vw;
+  min-width: 1150px;
+  margin: 0 auto;
+}
+
+header {
+  background: #6a08ff;
+  padding-top: 4vh;
+  background-image: url("./img/img1.png");
+  background-position: 555px 250px;
+  background-repeat: no-repeat;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav>a {
+  font-family: "Raleway-medium";
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+header nav>a:hover {
+  /* border: 2px solid white;
+  border-radius: 20px;
+  padding: 8px;
+  transition: border .3s, padding .3s; */
+  color: black;
+  transition: color .3s;
+}
+
+.btn {
+  background: #ee5f60;
+  border: none;
+  color: white;
+  box-shadow: none;
+  outline: none;
+  transition: color .3s, background .3s;
+}
+
+.btn:hover {
+  color: black;
+  background: #ff5f60;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #dd5f60;
+}
+
+header nav .singin {
+  margin-left: 100px;
+  width: 120px;
+  height: 50px;
+  font-size: 18px;
+  font-family: "Raleway-regular",sans-serif;
+  border-radius: 25px;
+}
+
+.mid-header {
+  padding-top: 270px;
+  padding-bottom: 270px;
+}
+.mid-header h1 {
+  color: white;
+  font-size: 68px;
+  font-family: "Raleway-bold", sans-serif;
+  margin-bottom: 40px;
+}
+
+.mid-header p {
+  font-family: "Opensans-semibold", sans-serif;
+  font-size: 16px;
+  color: white;
+  line-height: 2.25em;
+  margin-bottom: 52px;
+  width: 555px;
+}
+
+button.read {
+  width: 150px;
+  height: 50px;
+  font-family: "Raleway-Bold",sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
