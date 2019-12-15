@@ -70,19 +70,18 @@ header {
   width: 100%;
 }
 
+}
 .top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 nav {
   width: 670px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 header nav>a {
   font-family: "Raleway-medium";
   font-size: 16px;
@@ -91,12 +90,10 @@ header nav>a {
   text-transform: capitalize;
   padding: 10px;
 }
-
 header nav>a:hover {
   color: black;
   transition: color .3s;
 }
-
 .btn {
   background: #ee5f60;
   border: none;
@@ -105,17 +102,14 @@ header nav>a:hover {
   outline: none;
   transition: color .3s, background .3s;
 }
-
 .btn:hover {
   color: black;
   background: #ff5f60;
   cursor: pointer;
 }
-
 .btn:active {
   background-color: #dd5f60;
 }
-
 header nav .singin {
   margin-left: 100px;
   width: 120px;
@@ -124,7 +118,6 @@ header nav .singin {
   font-family: "Raleway-regular", sans-serif;
   border-radius: 25px;
 }
-
 .mid-header {
   padding-top: 270px;
   padding-bottom: 270px;
@@ -139,7 +132,6 @@ header nav .singin {
   font-family: "Raleway-bold", sans-serif;
   margin-bottom: 40px;
 }
-
 .mid-header p {
   font-family: "Opensans-semibold", sans-serif;
   font-size: 16px;
@@ -148,7 +140,6 @@ header nav .singin {
   margin-bottom: 52px;
   width: 555px;
 }
-
 button.read {
   width: 150px;
   height: 50px;
