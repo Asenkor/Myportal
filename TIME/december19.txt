@@ -33,3 +33,17 @@
 
 19.30 Education css header 20.10 (40 min)
 23.35 Education css subheader 00.05 (30 min)
+
+12.12.2019
+
+22.15 Education css subheader 23.15 (60min)
+
+14.12.2019
+
+12.50 Education css 13.50 (60 min)
+21.00 Yandex.practicum Front-end 23.00 (120min)
+
+15.12.2019
+
+07.30 Yandex.Practicum 10.00 (150min)
+14.00 Education welcome sections 16.00 (120min)
