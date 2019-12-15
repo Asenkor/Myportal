@@ -54,12 +54,11 @@
 }
 
 body {
-  max-width: 1920px;
+  width: 1920px;
 }
 
 .container {
   width: 1170px;
-  min-width: 1150px;
   margin: 0 auto;
 }
 
@@ -68,6 +67,9 @@ header {
   background: #6a08ff;
   padding-top: 50px;
   width: 100%;
+  background-image: url("./img/img1.png");
+  background-position: 925px 255px;
+  background-repeat: no-repeat;
 }
 .logo {
   display: inline-block;
@@ -123,9 +125,6 @@ header nav .singin {
 .mid-header {
   padding-top: 270px;
   padding-bottom: 270px;
-  background-image: url("./img/img1.png");
-  background-position: 450px 200px;
-  background-repeat: no-repeat;
 }
 
 .mid-header h1 {
@@ -171,7 +170,6 @@ button.read {
   position: absolute;
   box-sizing: border-box;
   top: -90px;
-  font-size: 0;
 }
 
 .subheader-apply-name {
@@ -265,14 +263,14 @@ button.read {
 /* ----- Welcome section ----- */
 .welcome-p1 {
   background-image: url("./img/welcome1.png");
-  background-position: -550px -230px;
+  background-position: -325px -230px;
   background-repeat: no-repeat;
   padding-top: 1px;
 }
 
 .welcome-p2 {
   background-image: url("./img/welcome2.png");
-  background-position: 700px -300px;
+  background-position: 995px -300px;
   background-repeat: no-repeat;
   padding-bottom: 95px;
   padding-top: 185px;
@@ -378,6 +376,10 @@ button.read {
   color: inherit;
   font-size: inherit;
   text-transform: capitalize;
+  transition: color .3s;
 }
 
+.nav-bottom a:hover {
+  color: black;
+}
 /* ----- footer end ----- */
