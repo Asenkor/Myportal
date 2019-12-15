@@ -69,8 +69,10 @@ header {
   padding-top: 50px;
   width: 100%;
 }
-
+.logo {
+  display: inline-block;
 }
+
 .top-header {
   display: flex;
   justify-content: space-between;
