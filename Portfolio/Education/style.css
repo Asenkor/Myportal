@@ -53,10 +53,6 @@
   src: url("./fonts/OpenSans/OpenSans-Italic.ttf");
 }
 
-body {
-  width: 1920px;
-}
-
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -67,10 +63,8 @@ header {
   background: #6a08ff;
   padding-top: 50px;
   width: 100%;
-  background-image: url("./img/img1.png");
-  background-position: 925px 255px;
-  background-repeat: no-repeat;
 }
+
 .logo {
   display: inline-block;
 }
@@ -80,12 +74,14 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 nav {
   width: 670px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 header nav>a {
   font-family: "Raleway-medium";
   font-size: 16px;
@@ -94,10 +90,12 @@ header nav>a {
   text-transform: capitalize;
   padding: 10px;
 }
+
 header nav>a:hover {
   color: black;
   transition: color .3s;
 }
+
 .btn {
   background: #ee5f60;
   border: none;
@@ -106,14 +104,17 @@ header nav>a:hover {
   outline: none;
   transition: color .3s, background .3s;
 }
+
 .btn:hover {
   color: black;
   background: #ff5f60;
   cursor: pointer;
 }
+
 .btn:active {
   background-color: #dd5f60;
 }
+
 header nav .singin {
   margin-left: 100px;
   width: 120px;
@@ -122,9 +123,23 @@ header nav .singin {
   font-family: "Raleway-regular", sans-serif;
   border-radius: 25px;
 }
+
 .mid-header {
   padding-top: 270px;
   padding-bottom: 270px;
+  width: 555px;
+  position: relative;
+}
+
+.mid-header:after {
+  content: "";
+  position: absolute;
+  left: 555px;
+  top: 155px;
+  height: 486px;
+  width: 720px;
+  background-image: url("./img/img1.png");
+  z-index: 2;
 }
 
 .mid-header h1 {
@@ -133,6 +148,7 @@ header nav .singin {
   font-family: "Raleway-bold", sans-serif;
   margin-bottom: 40px;
 }
+
 .mid-header p {
   font-family: "Opensans-semibold", sans-serif;
   font-size: 16px;
@@ -141,6 +157,7 @@ header nav .singin {
   margin-bottom: 52px;
   width: 555px;
 }
+
 button.read {
   width: 150px;
   height: 50px;
@@ -261,6 +278,10 @@ button.read {
 
 /* -----end subheader----- */
 /* ----- Welcome section ----- */
+/* .welcome {
+  width: 1920px;
+  margin: 0 auto;
+} */
 .welcome-p1 {
   background-image: url("./img/welcome1.png");
   background-position: -325px -230px;
@@ -382,4 +403,165 @@ button.read {
 .nav-bottom a:hover {
   color: black;
 }
+
 /* ----- footer end ----- */
+@media screen and (min-width: 1401px) and (max-width: 1601px) {
+  .welcome {
+    width: 1600px;
+    margin: 0 auto;
+  }
+
+  .welcome-p1 {
+    background-position: -485px -230px;
+  }
+
+  .welcome-p2 {
+    background-position: 835px -300px;
+  }
+
+  .mid-header::after {
+    left: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .welcome-p1 {
+    background-position: -595px -230px;
+  }
+
+  .welcome-p2 {
+    background-position: 685px -300px;
+  }
+
+  .mid-header::after {
+    left: 450px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .mid-header::after {
+    content: none;
+  }
+
+  .subheader-quote {
+    margin-right: 0;
+  }
+
+  .ws-p1 {
+    margin-left: 440px;
+  }
+
+  .welcome-section {
+    width: 500px;
+  }
+
+  .welcome-p1 {
+    background-position: -700px -230px;
+  }
+
+  .welcome-p2 {
+    background-position: 440px -300px;
+  }
+
+  .preferences-card {
+    width: 280px;
+  }
+
+  .mid-header {
+    margin: 0 auto;
+  }
+
+  .read {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .container, header{
+    max-width: 700px;
+  }
+
+  nav {
+    width: 500px;
+  }
+
+  .mid-header {
+    margin: 0 auto;
+    padding: 150px 0;
+  }
+
+  .mid-header::after {
+    content: none;
+  }
+
+  .btn{
+    margin: 0 auto;
+    display: block;
+  }
+
+  .subheader {
+    position: static;
+    height: 500px;
+  }
+
+
+  .subheader-apply {
+    margin: 20px auto;
+    position: static;
+    float: none;
+  }
+
+
+  .subheader-quote {
+    float: none;
+    margin: 10px auto 30px;
+    background: #6a08ff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .quote-body {
+    color: white;
+  }
+
+
+  .welcome-section {
+    width: 550px;
+    margin: 50px auto;
+    padding: 20px 0 90px;
+  }
+
+  .welcome-p1 {
+    background: none;
+  }
+
+  .welcome-p2 {
+    padding-top: 50px;
+    background: none;
+  }
+
+  .preferences-card {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .copyright {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .nav-bottom {
+    margin: 0 auto;
+  }
+}
