@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .w3-myfont {
+      font-family: 'Times New Roman';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w3-container w3-center">
+    <h2>Это мой сайт на W3.CSS</h2>
+    <p class="w3-text-orange ">W3.CSS - это набор стилей, написанный разработчиками стандарта HTML&CSS. Как я понял, это такой своеобразный фреймворк типа Bootstrap и им похожих.</p>
+    <div class="w3-container w3-red w3-round">ONE</div>
+    <div class="w3-container w3-blue w3-round">TWO</div>
+    <div class="w3-container w3-teal w3-round">THREE</div>
+    <div class="w3-container w3-khaki w3-round">FOUR</div>
+    <div class="w3-panel w3-border w3-border-red w3-hover-green w3-round">I have a red borders</div>
+    <div class="w3-panel w3-border w3-round-large">i have a standart borders</div>
+    <div class="w3-panel w3-bottombar w3-pale-red w3-border-red">I have a thick bottom border</div>
+    <div class="w3-panel w3-card-4 w3-light-green">I'm a card like paper-card</div>
+    <div class="w3-card" style="width:50%; margin:0 auto">
+      <header class="w3-container w3-green">It's a card</header>
+      <div class="w3-container w3-pale-green">Yeah..i'm a card. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.</div>
+      <footer class="w3-container w3-green">Asenkor 2019</footer>
+    </div>
+    <div class="w3-card w3-dark-grey" style="width:30%; margin:20px auto">
+      <div class="w3-container w3-center">
+        <h3>Friend Request</h3>
+        <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="avatar" style="width:80%">
+        <p>Andrew Senko</p>
+        <div class="w3-section">
+          <button class="w3-button w3-green">Accept</button>
+          <button class="w3-button w3-red">Decline</button>
+        </div>
+      </div>
+    </div>
+    <div class="w3-container">
+      <h1>Heading 1 (36px)</h1>
+      <h2>Heading 2 (30px)</h2>
+      <h3>Heading 3 (24px)</h3>
+      <h4>Heading 4 (20px)</h4>
+      <h5>Heading 5 (18px)</h5>
+      <h6>Heading 6 (16px)</h6>
+    </div>
+    <div class="w3-container">
+      <h2>Font-Size Classes</h2>
+      <p class="w3-tiny">w3-tiny</p>
+      <p class="w3-small">w3-small</p>
+      <p class="w3-medium">w3-medium (Default)</p>
+      <p class="w3-large">w3-large</p>
+      <p class="w3-xlarge">w3-xlarge</p>
+      <p class="w3-xxlarge">w3-xxlarge</p>
+      <p class="w3-xxxlarge">w3-xxxlarge</p>
+      <p class="w3-jumbo">w3-jumbo</p>
+    </div>
+    <div class="w3-container">
+      <h2>Other things about text</h2>
+      <p class="w3-myfont">Этот текст написан шрифтом Таймс, потому что я указал его через класс.</p>
+      <p class="w3-right-align">Этот текст написан справа.</p>
+      <p class="w3-center">Этот текст написан по центру.</p>
+      <div class="w3-green">
+        <p class="w3-opacity w3-xxlarge">Этот текст полупрозрачный на зеленом фоне.</p>
+      </div>
+      <p class="w3-wide">Этот текст широооокий</p>
+      <div class="w3-red w3-round">
+        <p class="w3-xxlarge">Этот текст написан в красном закругленном прямоугольнике.</p>
+      </div>
+    </div>
+  </div>
+  <button class="w3-btn w3-red" onclick="document.getElementById('id01').style.display='block'">Show panel</button>
+  <div id="id01" class="w3-panel w3-green w3-display-container" style="display:none">
+    <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">X</span>
+    <p>Click on the X to close this panel.</p>
+    <p>Click on the X to close this panel.</p>
+  </div>
+  <div class="w3-container w3-margin ">
+    <div class="w3-padding-64 w3-green">
+      <p class="w3-text-white w3-large">Я имею top and bottom паддинги в 64 пикселя.</p>
+    </div>
+    <div class="w3-padding-16 w3-gray">
+      <p class="w3-large">Я имею top and bottom паддинги в 16 пикселей.</p>
+    </div>
+    <div class="w3-padding-large w3-blue">
+      <p class="w3-small">Я имею паддинги лардж</p>
+    </div>
+    <div class="w3-padding-small w3-purple">
+      <p class="w3-xxlarge">Я имею паддинги смол.</p>
+    </div>
+  </div>
+  <div class="w3-display-container w3-large w3-hover-opacity" style="height: 500px; width:900px;margin: 20px auto;">
+    <img src="https://idealtourist.ru/wp-content/uploads/2016/08/6a1df1b932a0aa2c8731031d332ba207.jpg" alt="">
+    <div class="w3-padding w3-display-topleft">Top Left</div>
+    <div class="w3-padding w3-display-topright">Top Right</div>
+    <div class="w3-padding w3-display-bottomleft">Bottom Left</div>
+    <div class="w3-padding w3-display-bottomright">Bottom Right</div>
+    <div class="w3-padding w3-display-left">Left</div>
+    <div class="w3-padding w3-display-right">Right</div>
+    <div class="w3-padding w3-display-middle">Middle</div>
+    <div class="w3-padding w3-display-topmiddle">Top Mid</div>
+    <div class="w3-padding w3-display-bottommiddle">Bottom Mid</div>
+  </div>
+
+</body>
+
+</html>
