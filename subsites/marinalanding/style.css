@@ -1,0 +1,47 @@
+body{
+	
+	background-color: white;
+}
+div{
+	border: 1px solid;
+	border-color: 82 82 82;
+	margin: 8px 10px 8px 10px;
+	padding: 0;
+}
+div.header{
+	height: 330px;
+}
+div.menu{
+	height: 70px;
+	text-align: center;
+	
+}
+div.text{
+	height: 250px;
+	padding-left: 15px;
+}
+a {
+	color: black;
+	padding: 10px 50px 10px 50px;
+	font-family: Aparajita;
+	font-size: 40pt;
+}
+a#first{
+	padding-left: 5px;
+}
+a#last{
+	padding-right: 5px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+p{
+	font-family: Aparajita;
+	font-style: bold;
+	font-size: 50pt;
+}
+a:visited {
+	color: #D72020;
+}
