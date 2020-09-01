@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.w3-opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.w3-uppercase {
+  text-transform: uppercase;
+}
+
+.w3-input-cost {
+  width: 30%;
+  margin-left: 35%;
+}
+
+.w3-input-value {
+  width: 50%;
+  margin-left: 25%;
+}

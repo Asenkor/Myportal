@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>MoneyCount - Best way to count your money!</title>
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="w3-animate-opacity">
+  <div class="w3-container w3-opensans" style="max-width: 1300px; margin: 0 auto;">
+    <div class="w3-center">
+      <h2>ПРИВЕТ!</h2>
+      <p class="w3-panel w3-large ">Я страничка, которая поможет рассчитать твои денюжки.</p>
+    </div>
+    <div>
+      <form class="w3-container " id="calculator">
+        <!-- КУРСЫ ВАЛЮТ -->
+        <div class=" w3-container w3-card-4 w3-padding-24 w3-margin">
+          <p class="w3-center w3-xlarge w3-uppercase">Курсы валют:</p>
+          <div class="w3-row">
+            <div class="w3-col w3-third w3-center">
+              <label class="w3-text-gray">Доллар США</label>
+              <input class="w3-input w3-border" type="number" id="costUsa" placeholder="2.40" style="width: 30%; margin-left: 35%">
+            </div>
+            <div class="w3-col w3-third w3-center">
+              <label class="w3-text-gray">Евро</label>
+              <input class="w3-input w3-border" type="number" id="costEuro" placeholder="2.70" style="width: 30%; margin-left: 35%">
+            </div>
+            <div class="w3-col w3-third w3-center">
+              <label class="w3-text-gray">100 российских рублей</label>
+              <input class="w3-input w3-border" type="number" id="costRus" placeholder="3.30" style="width: 30%; margin-left: 35%">
+            </div>
+          </div>
+        </div>
+        <!-- ДЕПОЗИТЫ -->
+        <div class="w3-container w3-card-4 w3-margin">
+          <h4 class="w3-padding w3-center w3-large w3-uppercase">Депозиты на такое-то число</h4>
+          <!-- ДЕПОЗИТЫ НА КАРТАХ -->
+          <div class="w3-row w3-margin-bottom w3-center">
+            <h6 class="w3-center">Депозиты</h6>
+            <div class="w3-left w3-half">
+              <label class="w3-text-gray">МТБанк</label>
+              <input class="w3-input w3-input-value w3-border" type="number" id="inputMT" placeholder="1234.56">
+            </div>
+            <div class="w3-right w3-half">
+              <label class="w3-text-gray">Альфа-банк</label>
+              <input class="w3-input w3-border" type="number" id="inputAlfa" placeholder="1234.56">
+            </div>
+          </div>
+          <!-- ШКАТУЛОЧКА -->
+          <div class="w3-row">
+            <h6 class="w3-center">Шкатулка</h6>
+            <div class="w3-col w3-half w3-left w3-center">
+              <label class="w3-text-gray">Доллары США</label>
+              <input class="w3-input w3-border" type="number" id="inputUsa" placeholder="1234"> Равно: <span id="resultUsa"></span> бел. рублей <br>
+              <div class=" w3-margin-top"><label class="w3-text-gray">Евро</label>
+                <input class="w3-input w3-border" type="number" id="inputEuro" placeholder="1234"> Равно: <span id="resultEuro"></span> бел.рублей</div>
+            </div>
+            <div class="w3-col w3-half w3-right w3-center">
+              <label class="w3-text-gray">Рос. рубли</label>
+              <input class="w3-input w3-border " type="number" id="inputRus" placeholder="1234"> Равно: <span id="resultRus"></span> бел.рублей <br>
+              <div class=" w3-margin-top"><label class="w3-text-gray ">Бел. рубли</label>
+                <input class="w3-input w3-border" type="number" id="inputBel" placeholder="1234"> Равно: <span id="resultBel"></span> долларов</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+</body>
+<script src="script.js" charset="utf-8">
+
+</script>
+
+</html>
